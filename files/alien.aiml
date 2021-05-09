@@ -1,0 +1,2319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern> ^ Alien ^ </pattern>
+        <template>
+            <delay>1</delay>    
+            Cand te gandesti la filme cu extraterestri automat iti vine in minte franciza "Alien 👾".
+            <delay>1</delay>
+            Insa in acesta categorie exista o plaja intreaga de alte filme gata sa fie descoperite.
+            <delay>1</delay>
+            Alege un subgen pentru filmul tau.
+            
+        	<button>
+                <text>Action 😎</text>
+                <postback> ^ 6AlienAction9 ^ </postback>
+            </button>
+                
+            <button>
+                <text>Thriller 😰</text>
+                <postback> ^ 6AlienThriller9 ^ </postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+            <think>
+        	   <set name = "subgen">alien</set>
+        	</think>
+                
+        </template>
+    </category>
+    
+        <category>
+        
+            <pattern> ^ 6AlienAction9 ^ </pattern>
+            <template>
+                
+                <delay>1</delay>    
+                Filmele de actiune cu extraterestri sunt foarte ravnite de publicul larg.
+                <delay>1</delay>
+                Multe dintre acestea se regasesc in cele doua premize de mai jos.
+                <delay>1</delay>
+                Alege premiza care te intriga cel mai mult.
+            
+                <button>
+                    <text>Invazie extraterestra 🛸</text>
+                    <postback> ^ Invazie extraterestra ^ </postback>
+                </button>
+                    
+                <button>
+                    <text>Kaiju (monstri gigantici) 👹</text>
+                    <postback> ^ Kaiju ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+            
+            </template>
+        
+        </category>
+        
+            <category>
+        
+                <pattern> ^ Invazie extraterestra ^ </pattern>
+                <template>
+                    
+                    <delay>1</delay>
+                    Invaziile extraterestre 🛸 cu actorul Tom Cruise sunt palpitante.
+                    <delay>1</delay>
+                    Totusi aceasta nu este singura formula de succes pentru o invazie corespunzatoare.
+                    <delay>1</delay>
+                    Doresti un film cu actorul Tom Cruise in rolul principal? 
+                    
+                        <button>
+                            <text>Arata-mi</text>
+                            <postback> ^ tomcruise69 ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                
+                </template>
+        
+            </category>
+            
+            <category>
+                
+                <pattern> ^ tomcruise69 ^ </pattern>
+                <template>
+                    
+                    <delay>2</delay>
+                    
+                    <card>
+                        
+                        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/952px-Tom_Cruise_by_Gage_Skidmore_2.jpg</image>
+                        
+                        <title>Tom Cruise</title>
+                        
+                        <subtitle></subtitle>
+                        
+                         <button>
+                            <text>Doresc un film cu Tom Cruise</text>
+                            <postback> ^ 6DaAA9 ^ </postback>
+                        </button>
+                    
+                        <button>
+                            <text>Nu doresc un film cu Tom Cruise</text>
+                            <postback> ^ 6NuAA9 ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Detalii despre Tom Cruise (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Tom_Cruise</url>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                    
+                    </card>
+                
+                </template>
+                
+            </category>
+            
+                <category>
+            
+                    <pattern> ^ 6DaAA9 ^ </pattern>
+                    <template>
+                        
+                        <image>https://media.giphy.com/media/WDtCGLCXBAgow/giphy.gif</image>
+                        
+                        <delay>2</delay>
+                        Ok deci iti place Tom Cruise.
+                        <delay>1</delay>
+                        Acum mai ai nevoie de inca un ingredient pentru o combinatie letala.
+                        <delay>1</delay>
+                        Alege un regizor pentru filmul tau.
+                        
+                    <button>
+                        <text>Arata-mi</text>
+                        <postback> ^ spanddl ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                    </template>
+            
+                </category>
+                
+                <category>
+            
+                    <pattern> ^ spanddl ^ </pattern>
+                    <template>
+                        
+                        <delay>2</delay>
+                        
+                    <carousel>
+            	    
+                	    <card>
+                	        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ready_Player_One_Japan_Premiere_Red_Carpet_Steven_Spielberg_%2841604920761%29_%28cropped%29.jpg/854px-Ready_Player_One_Japan_Premiere_Red_Carpet_Steven_Spielberg_%2841604920761%29_%28cropped%29.jpg</image>
+                    	       
+                    	       <title>Steven Spielberg</title>
+                            <subtitle>War of the Worlds</subtitle>
+                	        
+                        	<button>
+                                <text>Film regizat de Steven Spielberg</text>
+                                <postback> ^ War ^ Worlds ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Informatii despre Steven Spielberg (Wikipedia)</text>
+                                <url>https://en.wikipedia.org/wiki/Steven_Spielberg</url>
+                            </button>
+                        
+                        </card>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Doug_Liman_2011_Shankbone.JPG/796px-Doug_Liman_2011_Shankbone.JPG</image>
+                            
+                	        <title>Doug Liman</title>
+                	        <subtitle>Edge of Tomorrow</subtitle>
+                            
+                            <button>
+                                <text>Film regizat de Doug Liman</text>
+                                <postback> ^ Edge ^ Tomorrow ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Informatii despre Doug Liman (Wikipedia)</text>
+                                <url>https://en.wikipedia.org/wiki/Doug_Liman</url>
+                            </button>
+                        
+                        </card>
+                    
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                    </template>
+            
+                </category>
+                
+                    <category>
+                        <pattern> ^ War ^ Worlds ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/8/83/War_of_the_Worlds_2005_poster.jpg</image>
+                                
+                                <title>War of the Worlds</title>
+                                <subtitle>
+                                    An updated version of H.G Wells' seminal sci-fi classic about an alien invasion threatening the future of humanity. The catastrophic nightmare is depicted through the eyes of one American family fighting for survival.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>War of the Worlds (2005) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0407304/?ref_=nv_sr_srsg_0</url>
+                                </button>
+                                
+                                <button>
+                                    <text>War of the Worlds (2005) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/War_of_the_Worlds_(2005_film)</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>War of the Worlds</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/51sGBG_-JBE</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review MovieNight</text>
+                                    <url>https://youtu.be/hmyEXREaong</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Theory about the aliens The Theorizer (SPOILERS!)</text>
+                                    <url>https://youtu.be/0rN4uGf1mwU</url>
+                                </button>
+                                
+                                <button>
+                                    <text>The book "The War of the Worlds" by H.G. Wells</text>
+                                    <url>https://www.amazon.com/War-Worlds-H-G-Wells/dp/1936594056</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Edge ^ Tomorrow ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/f/f9/Edge_of_Tomorrow_Poster.jpg</image>
+                                
+                                <title>Edge of Tomorrow</title>
+                                <subtitle>
+                                    A soldier fighting aliens gets to relive the same day over and over again, the day restarting every time he dies.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Edge of Tomorrow (2014) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt1631867/?ref_=nv_sr_srsg_0</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Edge of Tomorrow (2014) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Edge_of_Tomorrow</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Edge of Tomorrow</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/kjM3ekF9ozo</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/doPSkJ3Jc5o</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review The Flick Pick</text>
+                                    <url>https://youtu.be/QaHlnSvWPSg</url>
+                                </button>
+                                
+                                <button>
+                                    <text>The manga "All You Need Is Kill" by Hiroshi Sakurazaka</text>
+                                    <url>https://www.amazon.com/All-Need-Kill-Hiroshi-Sakurazaka/dp/1421527618</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                <category>
+            
+                    <pattern> ^ 6NuAA9 ^ </pattern>
+                    <template>
+                        
+                        <image>https://media.giphy.com/media/sauYjWmJJ18xW/giphy.gif</image>
+                    
+                        <delay>3</delay>
+                        Ok deci nu iti place Tom Cruisem, gusturile nu se discuta.
+                        <delay>1</delay>
+                        Insa trebuie sa avem o discutie despre regizori tai preferati.
+                        <delay>1</delay>
+                        Alege un regizor pentru filmul tau.
+                        
+                        <button>
+                            <text>Arata-mi</text>
+                            <postback> ^ jlandre ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                    
+                    </template>
+            
+                </category>
+                
+                <category>
+            
+                    <pattern> ^ jlandre ^ </pattern>
+                    <template>
+                        
+                        <delay>2</delay>
+                        
+                    <carousel>
+            	    
+                	    <card>
+                	        
+                	        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jonathan_Liebesman_by_Gage_Skidmore.jpg/937px-Jonathan_Liebesman_by_Gage_Skidmore.jpg</image>
+                    	       
+                    	       <title>Jonathan Liebesman</title>
+                            <subtitle>Battle Los Angeles</subtitle>
+                	        
+                        	<button>
+                                <text>Film regizat de Jonathan Liebesman</text>
+                                <postback> ^ Battle Los Angeles ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Informatii despre Jonathan Liebesman (Wikipedia)</text>
+                                <url>https://en.wikipedia.org/wiki/Jonathan_Liebesman</url>
+                            </button>
+                        
+                        </card>
+                        
+                        <card>
+                            
+                            <image>http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTkCbrgHr1Xpp8t648K8yWvUJH-w8S_0Qf0_RDmUUru7cE63vNlas5VVAjdGA8J</image>
+                            
+                	        <title>Roland Emmerich</title>
+                	        <subtitle>Franciza Independence Day</subtitle>
+                            
+                            <button>
+                                <text>Film regizat de Roland Emmerich</text>
+                                <postback> ^ Filme Independence Day ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Informatii despre Roland Emmerich (Wikipedia)</text>
+                                <url>https://en.wikipedia.org/wiki/Roland_Emmerich</url>
+                            </button>
+                        
+                        </card>
+                    
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                    </template>
+            
+                </category>
+                
+                    <category>
+                        <pattern> ^ Battle Los Angeles ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/2/29/Battle_Los_Angeles_Poster.jpg</image>
+                                
+                                <title>Battle Los Angeles</title>
+                                <subtitle>
+                                    A squad of U.S. Marines becomes the last line of defense against a global invasion.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Battle Los Angeles (2011) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt1217613/?ref_=nv_sr_srsg_3</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Battle Los Angeles (2011) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Battle:_Los_Angeles</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Battle Los Angeles</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/SjRXHVVfZu8</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/_1Iv9W9ZWn4</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review IGN</text>
+                                    <url>https://youtu.be/F3BJd7_YWjc</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+            
+                        <pattern> ^ Filme Independence Day ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Primul film din franciza este primordial pentru orice fan SF.
+                            <delay>1</delay>
+                            Al doilea film cu toate ca este mai nou nu se ridica la acelasi nivel.
+                            <delay>1</delay>
+                            Alege un film din franciza.
+                        
+                             <button>
+                                <text>1.Independence Day</text>
+                                <postback> ^ Independence Day </postback>
+                            </button>
+                        
+                            <button>
+                                <text>2.Independence Day: Resurgence</text>
+                                <postback> ^ Independence Day ^ Resurgence ^ </postback>
+                            </button>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                        
+                        </template>
+                
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Independence Day </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/b/bb/Independence_day_movieposter.jpg</image>
+                                    
+                                    <title>Independence Day</title>
+                                    <subtitle>
+                                        The aliens are coming and their goal is to invade and destroy Earth. Fighting superior technology, mankind's best weapon is the will to survive.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Independence Day (1996) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0116629/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Independence Day (1996) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Independence_Day_(1996_film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Independence Day ^ Resurgence ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Independence Day</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Chris Stuckmann and The Flick Pick</text>
+                                        <url>https://youtu.be/XXUzTkXUiRI</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/5gAM_C786j0</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Independence Day 1 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Independence Day </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Independence Day ^ Resurgence ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/f/f3/Independence_Day_Resurgence_poster.jpg</image>
+                                    
+                                    <title>Independence Day: Resurgence</title>
+                                    <subtitle>
+                                        The aliens are coming and their goal is to invade and destroy Earth. Fighting superior technology, mankind's best weapon is the will to survive.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Independence Day: Resurgence (2016) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt1628841/?ref_=nv_sr_srsg_3</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Independence Day: Resurgence (2016) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Independence_Day:_Resurgence</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Independence Day ^ </postback>
+                                        </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Independence Day: Resurgence</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/u14TIraL6-E</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/CE75gb_Ggbk</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Recenzie Sucre</text>
+                                        <url>https://youtu.be/ffCov9QBUWA</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Independence Day 2 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Independence Day ^ Resurgence ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+            <category>
+        
+                <pattern> ^ Kaiju ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Primele filme de acest gen au aparut in Japonia cu foarte multi ani in urma.
+                    <delay>1</delay>
+                    Ideea a fost atat de intriganta incat au aparut cateva francize si la Hollywood.
+                    <delay>1</delay>
+                    Iata doua dintre aceste francize.
+                
+                     <button>
+                        <text>Pacific Rim  🐲</text>
+                        <postback> ^ Filme Pacific Rim ^ </postback>
+                    </button>
+                
+                    <button>
+                        <text>MonsterVerse 🦍</text>
+                        <postback> ^ MonsterVerse ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                
+                </template>
+        
+            </category>
+            
+                <category>
+            
+                    <pattern> ^ Filme Pacific Rim ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        Extraterestri giganti ataca planeta!
+                        <delay>1</delay>
+                        Solutia, construieste cativa roboti giganti care sa le faca fata.
+                        <delay>1</delay>
+                        Ce film din franciza doresti sa privesti?
+                    
+                         <button>
+                            <text>1.Pacific Rim</text>
+                            <postback> ^ Pacific Rim </postback>
+                        </button>
+                    
+                        <button>
+                            <text>2.Pacific Rim: Uprising</text>
+                            <postback> ^ Pacific Rim ^ Uprising ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                    
+                    </template>
+            
+                </category>
+                
+                    <category>
+                        <pattern> ^ Pacific Rim </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/f/f3/Pacific_Rim_FilmPoster.jpeg</image>
+                                
+                                <title>Pacific Rim</title>
+                                <subtitle>
+                                    As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolete special weapon in a desperate effort to save the world from the apocalypse.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Pacific Rim (2013) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt1663662/?ref_=nv_sr_srsg_0</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Pacific Rim (2013) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Pacific_Rim_(film)</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Pacific Rim ^ Uprising ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Pacific Rim</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/s6XJxC6lXV8</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/_H3iv8T9SfU</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Pacific Rim 1 ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Pacific Rim </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Pacific Rim ^ Uprising ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/2/2e/Pacificrim2-poster.jpg</image>
+                                
+                                <title>Pacific Rim: Uprising</title>
+                                <subtitle>
+                                    Jake Pentecost, son of Stacker Pentecost, reunites with Mako Mori to lead a new generation of Jaeger pilots, including rival Lambert and 15-year-old hacker Amara, against a new Kaiju threat.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Pacific Rim: Uprising (2018) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt2557478/?ref_=nv_sr_srsg_6</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Pacific Rim: Uprising (2018) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Pacific_Rim:_Uprising</url>
+                                </button>
+                                
+                               	<button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Pacific Rim ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                
+                                <title>Pacific Rim: Uprising</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/eb6aLH5Dke4</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Recenzie Sucre</text>
+                                    <url>https://youtu.be/jagvOKlxe4Q</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/8ro_b-Z9xw8</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Pacific Rim 2 ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Pacific Rim ^ Uprising ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                <category>
+            
+                    <pattern> ^ MonsterVerse ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        Acesta este cea mai veche franciza Kaiju venita chiar din Japonia.
+                        <delay>1</delay>
+                        Dar refacuta cu cele mai bune efecte speciale ale momentului.
+                        <delay>1</delay>
+                        Ce film doresti de privesti?
+                    
+                        <button>
+                            <text>1.Godzilla</text>
+                            <postback> ^ Godzilla </postback>
+                        </button>
+                    
+                        <button>
+                            <text>2.Kong: Skull Island</text>
+                            <postback> ^ Kong ^ Skull ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>3.Godzilla: King of the Monsters</text>
+                            <postback> ^ Godzilla ^ King ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>4.Godzilla vs. Kong</text>
+                            <postback> ^ Godzilla ^ Kong ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                    
+                    </template>
+            
+                </category>
+                
+                    <category>
+                        <pattern> ^ Godzilla </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/1/10/Godzilla_%282014%29_poster.jpg</image>
+                                
+                                <title>Godzilla</title>
+                                <subtitle>
+                                    The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Godzilla (2014) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0831387/?ref_=nv_sr_srsg_6</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Godzilla (2014) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Godzilla_(2014_film)</url>
+                                </button>
+                                
+                               	<button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Kong ^ Skull Island ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Godzilla</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/cl-DYEl5sd0</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/se-5ali709I</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Godzilla 1 ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Godzilla </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Kong ^ Skull ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/3/34/Kong_Skull_Island_poster.jpg</image>
+                                
+                                <title>Kong: Skull Island</title>
+                                <subtitle>
+                                    After the Vietnam war, a team of scientists explores an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Kong: Skull Island (2017) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt3731562/?ref_=nv_sr_srsg_3</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Kong: Skull Island (2017) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Kong:_Skull_Island</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Godzilla ^ </postback>
+                                </button>
+                                
+                               	<button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Godzilla ^ King of the Monsters ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                
+                                <title>Kong: Skull Island</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Recenzie Inca Ceva</text>
+                                    <url>https://youtu.be/prZWLuoUx2E</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Recenzie Sucre</text>
+                                    <url>https://youtu.be/31y4LmTqRck</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/e3ZavlsNN5Y</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Kong ^ Island ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Kong ^ Skull ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Kong 1 ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Kong ^ Skull ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Kong </pattern>
+                        <template>
+                            
+                			<srai> ^ Kong ^ Skull ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Godzilla ^ King ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/9/9a/Godzilla_%E2%80%93_King_of_the_Monsters_%282019%29_poster.png</image>
+                                
+                                <title>Godzilla: King of the Monsters</title>
+                                <subtitle>
+                                    The crypto-zoological agency Monarch faces off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Godzilla: King of the Monsters (2019) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt3741700/?ref_=nv_sr_srsg_3</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Godzilla: King of the Monsters (2019) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Godzilla:_King_of_the_Monsters_(2019_film)</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Kong ^ Skull Island ^ </postback>
+                                </button>
+                                
+                               	<button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Godzilla vs ^ Kong ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                
+                                <title>Godzilla: King of the Monsters</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Recenzie Inca Ceva</text>
+                                    <url>https://youtu.be/SeSHRVHW0Fw</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Recenzie Sucre</text>
+                                    <url>https://youtu.be/JjWSFj2ZtZg</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/8cxR5a-Aod0</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Godzilla ^ Monsters ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Godzilla ^ King ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Godzilla 2 ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Godzilla ^ King ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Godzilla ^ Kong ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/6/63/Godzilla_vs._Kong.png</image>
+                                
+                                <title>Godzilla vs. Kong</title>
+                                <subtitle>
+                                    The epic next chapter in the cinematic Monsterverse pits two of the greatest icons in motion picture history against one another - the fearsome Godzilla and the mighty Kong - with humanity caught in the balance.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Godzilla vs. Kong (2021) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt5034838/?ref_=nv_sr_srsg_0</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Godzilla vs. Kong (2021) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Godzilla_vs._Kong</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Godzilla ^ King of the Monsters ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                
+                                <title>Godzilla vs. Kong</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Recenzie Inca Ceva</text>
+                                    <url>https://youtu.be/q6ZRTa_cKfs</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Recenzie Sucre</text>
+                                    <url>https://youtu.be/JitYKGHz9hg</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/9K87ZuK5wWw</url>
+                                </button>
+                            
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Kong ^ Godzilla ^ </pattern>
+                        <template>
+                            
+                			<srai> ^ Godzilla ^ Kong ^ </srai>
+                        
+                        </template>
+            		</category>
+        
+        <category>
+        
+            <pattern> ^ 6AlienThriller9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Subgenul thriller este foarte prezent pentru ca extraterestri 👽 = suspans.
+                <delay>1</delay>
+                Iar suspansul se regaseste si in alte subgenuri.
+                <delay>1</delay>
+                Ce subgen doresti sa mai aiba filmul tau?
+            
+                 <button>
+                    <text>Philosophical 🧐</text>
+                    <postback> ^ 6AlienPhilosophical9 ^ </postback>
+                </button>
+            
+                <button>
+                    <text>Horror 😱</text>
+                    <postback> ^ 6AlienHorror9 ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+            
+            </template>
+        
+        </category>
+        
+            <category>
+        
+                <pattern> ^ 6AlienPhilosophical9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Am pentru tine trei filme foarte interesante.
+                    <delay>1</delay>
+                    Ele sunt clasificate dupa tipul povestii.
+                    <delay>1</delay>
+                    Ce tip te intriga ce mai mult?
+                
+                
+                     <button>
+                        <text>Comercial  (usor de vizionat)</text>
+                        <postback> ^ District 9 ^ </postback>
+                    </button>
+                
+                    <button>
+                        <text>Necomercial (greu de vizionat)</text>
+                        <postback> ^ Arrival ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Plot Twist (rasturnari de situatie)</text>
+                        <postback> ^ Signs ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                
+                </template>
+        
+            </category>
+            
+                <category>
+                    <pattern> ^ Comercial ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/d/d7/District_nine_ver2.jpg</image>
+                            
+                            <title>District 9</title>
+                            <subtitle>
+                                Violence ensues after an extraterrestrial race forced to live in slum-like conditions on Earth finds a kindred spirit in a government agent exposed to their biotechnology.
+                            </subtitle>
+                                
+                            <button>
+                                <text>District 9 (2009) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1136608/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>District 9 (2009) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/District_9</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>District 9</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review FourFaceButtons</text>
+                                <url>https://youtu.be/03TRRJyWlDY</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review IGN</text>
+                                <url>https://youtu.be/38xentcpCtE</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Necomercial ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg</image>
+                            
+                            <title>Arrival</title>
+                            <subtitle>
+                                A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Arrival (2016) IMDb</text>
+                                <url>https://www.imdb.com/title/tt2543164/?ref_=nv_sr_srsg_6</url>
+                            </button>
+                            
+                            <button>
+                                <text>Arrival (2016) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Arrival_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Arrival</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/sxDVMUrNb_Y</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/ja9Yffx0EEI</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review IGN</text>
+                                <url>https://youtu.be/EeFWpjo8K1Q</url>
+                            </button>
+                            
+                            <button>
+                                <text>"Exalare" de Ted Chiang (cartea din care a fost inspirat filmul)</text>
+                                <url>https://nemira.ro/exalare</url>
+                            </button>
+                            
+                            <button>
+                                <text>Podcast Inca Ceva despre Arrival si Exalare</text>
+                                <url>https://nemira.ro/exalare</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Signs ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/0/08/The_Signs_movie.jpg</image>
+                            
+                            <title>Signs</title>
+                            <subtitle>
+                                A family living on a farm finds mysterious crop circles in their fields which suggests something more frightening to come.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Signs (2002) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0286106/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Signs (2002) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Signs_(2002_film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Signs</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/l_rGHSxmJz8</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review HSG</text>
+                                <url>https://youtu.be/ku9IQOmri9c</url>
+                            </button>
+                            
+                            <button>
+                                <text>Analyzed and Explained Chris Stuckmann</text>
+                                <url>https://youtu.be/EeFWpjo8K1Q</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+            <category>
+        
+                <pattern> ^ 6AlienHorror9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    In continuare poti alege franciza Alien 👾 cu care nu poti da gres.
+                    <delay>1</delay>
+                    In acelasi timp ai la dispozitie si doua filme total opuse, cand vine vorba de anul productie.
+                    <delay>1</delay>
+                    Ce varianta alegi?
+                   
+                     <button>
+                        <text>Film modern</text>
+                        <postback> ^ Quiet Place ^ </postback>
+                    </button>
+                
+                    <button>
+                        <text>Film clasic </text>
+                        <postback> ^ Thing ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Franciza Alien</text>
+                        <postback> ^ Franciza Alien ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                
+                </template>
+        
+            </category>
+            
+                <category>
+                    <pattern> ^ Quiet Place ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/a/a0/A_Quiet_Place_film_poster.png</image>
+                            
+                            <title>A Quiet Place</title>
+                            <subtitle>
+                                In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.
+                            </subtitle>
+                                
+                            <button>
+                                <text>A Quiet Place (2018) IMDb</text>
+                                <url>https://www.imdb.com/title/tt6644200/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>A Quiet Place (2018) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/A_Quiet_Place_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                            
+                            <title>A Quiet Place</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                            
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/Cat6_XuCOp4</url>
+                            </button>
+                           
+                            <button>
+                                <text>Recenzie Sucre</text>
+                                <url>https://youtu.be/YdfKrnUG7DI</url>
+                            </button>
+                            
+                            <button>
+                                <text>Recenzie RFC</text>
+                                <url>https://youtu.be/2uZVxFsJgu4</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Thing ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/a/a6/The_Thing_%281982%29_theatrical_poster.jpg</image>
+                            
+                            <title>The Thing</title>
+                            <subtitle>
+                                A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.
+                            </subtitle>
+                                
+                            <button>
+                                <text>The Thing (1982) IMDb</text>
+                                <url>https://www.imdb.com/title/tt6644200/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>The Thing (1982) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/A_Quiet_Place_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>The Thing</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                            
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/g7CmdZVgXLQ</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Cinemassacre</text>
+                                <url>https://youtu.be/broyjwCPNj4</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Drumdums</text>
+                                <url>https://youtu.be/QL9URCVkmHQ</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                <category>
+        
+                    <pattern> ^ Franciza Alien ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        Aici poti alege sa privesti filmele clasice care au consacrat franciza.
+                        <delay>1</delay>
+                        Sau poti incerca filmele moderne care se straduiesc sa o revitalizeze.
+                        <delay>1</delay>
+                        Ce filme sunt pe placul tau?
+                        
+                        <button>
+                            <text>Filmele moderne</text>
+                            <postback> ^ Filmele moderne Alien ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Filmele clasice </text>
+                            <postback> ^ Filmele clasice Alien ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Detalii despre franciza Alien (Wikipedia)</text>
+                            <url>https://ro.wikipedia.org/wiki/Alien_(franciz%C4%83)</url>
+                        </button>
+                        
+                        <button>
+                            <text>Linia temporala a filmelor RFC (YouTube)</text>
+                            <url>https://www.youtube.com/watch?v=ky0ivSDD3e8</url>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                    
+                    </template>
+        
+                </category>
+                
+                <category>
+                    <pattern> ^ Filme Alien ^ </pattern>
+                    <template>
+                        
+        				<srai> ^ Franciza Alien ^ </srai>
+                    
+                    </template>
+        		</category>
+                
+                    <category>
+            
+                        <pattern> ^ Filmele moderne Alien ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Alege un film modern din franciza Alien 👾.
+
+                            <button>
+                                <text>1.Prometheus </text>
+                                <postback> ^ Prometheus ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>2.Alien: Covenant </text>
+                                <postback> ^ Alien ^ Covenant ^ </postback>
+                            </button>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                        
+                        </template>
+            
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Prometheus ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/a/a3/Prometheusposterfixed.jpg</image>
+                                    
+                                    <title>Prometheus</title>
+                                    <subtitle>
+                                        Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Prometheus (2012) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt1446714/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Prometheus (2012) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Prometheus_(2012_film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Alien ^ Covenant ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Prometheus</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube) + Extra
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/ILg42J9DR9I</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/G8wYBClAtek</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Movie explained Chris Stuckmann</text>
+                                        <url>https://youtu.be/D7CChfYoO_I</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Alien ^ Prometheus ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Prometheus ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Alien ^ Covenant ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/3/33/Alien_Covenant_Teaser_Poster.jpg</image>
+                                    
+                                    <title>Alien: Covenant</title>
+                                    <subtitle>
+                                        The crew of a colony ship, bound for a remote planet, discover an uncharted paradise with a threat beyond their imagination, and must attempt a harrowing escape.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Alien: Covenant (2017) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt2316204/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alien: Covenant (2017) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Alien:_Covenant</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Prometheus ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                    
+                                    <title>Alien: Covenant</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/C3lUW7DQ2tU</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie Sucre</text>
+                                        <url>https://youtu.be/PiFsBwE7DJI</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Recenzie RFC</text>
+                                        <url>https://youtu.be/URjJoAxBTjc</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                    
+                    <category>
+            
+                        <pattern> ^ Filmele clasice Alien ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Alege un film clasic din franciza Alien 👾.
+                        
+                            <button>
+                                <text>3.Alien  </text>
+                                <postback> ^ Alien </postback>
+                            </button>
+                            
+                            <button>
+                                <text>4.Aliens</text>
+                                <postback> ^ Aliens ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>5.Alien³</text>
+                                <postback> ^ Alien3 ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>6.Alien: Resurrection</text>
+                                <postback> ^ Alien ^ Resurrection ^ </postback>
+                            </button>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                        
+                        </template>
+            
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Alien </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg</image>
+                                    
+                                    <title>Alien</title>
+                                    <subtitle>
+                                        After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Alien (1979) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0078748/?ref_=nv_sr_srsg_3</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alien (1979) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Alien_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Aliens ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Alien</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/C8R4_YigitU</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie Sucre</text>
+                                        <url>https://youtu.be/PiFsBwE7DJI</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Recenzie Spidey</text>
+                                        <url>https://youtu.be/MyAiD7aMi5I</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Alien 1 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Alien </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Aliens ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/f/fb/Aliens_poster.jpg</image>
+                                    
+                                    <title>Aliens</title>
+                                    <subtitle>
+                                        Fifty-seven years after surviving an apocalyptic attack aboard her space vessel by merciless space creatures, Officer Ripley awakens from hyper-sleep and tries to warn anyone who will listen about the predators.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Aliens (1986) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0090605/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Aliens (1986) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Aliens_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Alien ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Alien3 ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Aliens</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/SQFcnk1_qZ4</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/0VEuJVv8eJU</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Alien 2 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Aliens ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Alien3 ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/b/b9/Alien3_poster.jpg</image>
+                                    
+                                    <title>Alien³</title>
+                                    <subtitle>
+                                        After her last encounter, Ellen Ripley crash-lands on Fiorina 161, a maximum security prison. When a series of strange and deadly events occur shortly after her arrival, Ripley realizes that she has brought along an unwelcome visitor.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Alien³ (1992) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0103644/?ref_=nv_sr_srsg_7</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alien³ (1992) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Alien_3</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Aliens ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Alien ^ Resurrection ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+                                
+                                <think>
+                                    <set name = "wrong">phase1</set>
+                                </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Alien 3 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Alien3 ^ </srai>
+                            
+                            </template>
+                		</category>
+                
+                        <category>
+                            <pattern> ^ Alien ^ Resurrection ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/7/70/Alien_Resurrection_poster.jpg</image>
+                                    
+                                    <title>Alien: Resurrection</title>
+                                    <subtitle>
+                                        200 years after her death, Ellen Ripley is revived as a powerful human/alien hybrid clone. Along with a crew of space pirates, she must again battle the deadly aliens and stop them from reaching Earth.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Alien: Resurrection (1997) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0118583/?ref_=nv_sr_srsg_8</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alien: Resurrection (1997) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Alien_Resurrection</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Alien3 ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+          
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Alien: Resurrection</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/ttUQKMccXGQ</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review JoBlo</text>
+                                        <url>https://youtu.be/OEpZuKGuFSw</url>
+                                    </button>
+                                
+                                </card>
+                                
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Alien 4 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Alien ^ Resurrection ^ </srai>
+                            
+                            </template>
+                		</category>
+	
+</aiml>

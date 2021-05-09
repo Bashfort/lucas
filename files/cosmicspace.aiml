@@ -1,0 +1,2107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    
+        <pattern> ^ Cosmic space ^ </pattern>
+        <template>
+            <delay>1</delay>
+            In aceasta categorie poti fi sigur de un singur lucru, actiunea filmului se petrece in spatiul cosmic.
+            <delay>1</delay>
+            Cat depre restul, de la explorarea spatiului cosmic 🌌 sau al universurilor fictive 🌟 pana la cautarea adevarului 🔭 sau a unei planete locuibile 🌎, tu decizi.
+            <delay>1</delay>
+            Alege un subgen pentru filmul tau.
+			
+    	<button>
+            <text>Action 😎</text>
+            <postback> ^ 6CSAction9 ^ </postback>
+        </button>
+        
+        <button>
+            <text>Drama 🎭</text>
+            <postback> ^ 6CSDrama9 ^ </postback>
+        </button>
+        
+        <think>
+            <set name = "wrong">phase1</set>
+        </think>
+        
+        <think>
+    	    <set name = "subgen">cosmic</set>
+        </think>
+        
+    	</template>
+    	
+    </category>
+    
+        <category>
+    	    
+            <pattern> ^ ActionCS ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Cand spui actiune in spatiu spui universuri fictive.
+                <delay>1</delay>
+                Iata doua universuri pline de actiune ca iti vor oferi zeci de ore de distractie.
+    			
+        	<button>
+                <text>Star Wars 🌟 </text>
+                <postback> ^ Universul Star Wars ^ </postback>
+            </button>
+            
+            <button>
+                <text>Blade Runner 🤖</text>
+                <postback> ^ Universul Blade Runner ^ </postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+        	</template>
+        	
+        </category>
+        
+            <category>
+        	    
+                <pattern> ^ Universul Star Wars ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Star Wars🌟 este probabil cel mai mare si cunoscut univers fictiv.
+                    <delay>1</delay>
+                    Deci exista sansa ca deja sa fi vazut unele filmele din franciza.
+                    <delay>1</delay>
+                    Asa ca am imbogatit fiecare trilogie cu filme 📽️, seriale 🎞, jocuri🎮, comics-uri 💬 si chiar carti 📚 despre universul Star Wars🌟.
+        			
+            	<button>
+                    <text>Trilogia originala</text>
+                    <postback> ^ Trilogia originala Star Wars ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Trilogia antecedenta</text>
+                    <postback> ^ Trilogia antecedenta Star Wars ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Trilogia precedenta</text>
+                    <postback> ^ Trilogia precedenta Star Wars ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+            <category>
+                <pattern> ^ Franciza Star Wars ^ </pattern>
+                <template>
+                    
+    				<srai> ^ Universul Star Wars ^ </srai>
+                
+                </template>
+    		</category>
+    		
+    		<category>
+                <pattern> ^ Star Wars </pattern>
+                <template>
+                    
+        			<srai> ^ Universul Star Wars ^ </srai>
+                
+                </template>
+    		</category>
+            
+                <category>
+            	    
+                    <pattern> ^ Trilogia originala Star Wars ^ </pattern>
+                    <template>
+                        <random>
+	                        <li><image>https://media.giphy.com/media/3ornk57KwDXf81rjWM/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/l0HUhmhLMitxCifsc/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/obQ0Q8dav3L5S/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/inEZXlAOb1TC8/giphy.gif</image></li>
+	                    </random>
+	                    
+                        <delay>2</delay>
+                        La momentul aparitiei lor aceste filme au propulsat genul SF in topul preferintelor.
+                        <delay>1</delay>
+                        Ele raman relevante pana in momentul de fata datorita povesti si efectelor practice consacrate.
+                        <delay>1</delay>
+                        Ce episod doresti sa vizionezi?
+            			
+                	<button>
+                        <text>1.Star Wars: Episode IV - A New Hope</text>
+                        <postback> ^ Star Wars ^ Episode 4 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>2.Star Wars: Episode V - The Empire Strikes Back</text>
+                        <postback> ^ Star Wars ^ Episode 5 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>3.Star Wars: Episode VI - Return of the Jedi</text>
+                        <postback> ^ Star Wars ^ Episode 6 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Inapoi</text>
+                        <postback> ^ Star Wars ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 4 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg</image>
+                                
+                                <title>Star Wars: Episode IV - A New Hope</title>
+                                <subtitle>
+                                    Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode IV - A New Hope (1977) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0076759/?ref_=fn_tt_tt_1</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode IV - A New Hope (1977) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars_(film)</url>
+                                </button>
+                                
+                                <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Star Wars ^ Episode V ^ The Empire Strikes Back ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode IV - A New Hope</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/hxbRpHv2zYk</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/V_JxYwnoTRE</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/bjoUPH-5fYE</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode IV ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 4 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 4 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 4 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Hope ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 4 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 5 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/3/3c/SW_-_Empire_Strikes_Back.jpg</image>
+                                
+                                <title>Star Wars: Episode V - The Empire Strikes Back</title>
+                                <subtitle>
+                                    After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode V - The Empire Strikes Back (1980) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0080684/?ref_=fn_tt_tt_22</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode V - The Empire Strikes Back (1980) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/The_Empire_Strikes_Back</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Star Wars ^ Episode IV ^ A New Hope ^ </postback>
+                                </button>
+                                
+                                <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Star Wars ^ Episode VI ^ Return of the Jedi ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode V - The Empire Strikes Back</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/-Y-6iSnMQaU</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/XIBY09b4XB0</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/We5q7aPtub8</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode V ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 5 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 5 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 5 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Empire ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 5 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Strikes ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 5 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 6 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/b/b2/ReturnOfTheJediPoster1983.jpg</image>
+                                
+                                <title>Star Wars: Episode VI - Return of the Jedi</title>
+                                <subtitle>
+                                    After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode VI - Return of the Jedi (1983) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0086190/?ref_=fn_tt_tt_27</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode VI - Return of the Jedi (1983) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Return_of_the_Jedi</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Star Wars ^ Episode V ^ The Empire Strikes Back ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode VI - Return of the Jedi</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/8W9_d02g694</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/to65KF9X_Hg</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/caSPcao-DH0</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode VI ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 6 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 6 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 6 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Return ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 6 ^ </srai>
+                        
+                        </template>
+            		</category>
+                
+                <category>
+            	    
+                    <pattern> ^ Trilogia antecedenta Star Wars ^ </pattern>
+                    <template>
+                        <random>
+	                        <li><image>https://media.giphy.com/media/xT9DPr4VjeCgeiLoMo/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/1lznA4FFhnyJiUYIip/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/3o84sEXT9n0dmSsWl2/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/3ornkbVegziBt0PA1G/giphy.gif</image></li>
+	                    </random>
+	                    
+                        <delay>1</delay>
+                        Toate cele 3 filme din acesta trilogie sunt regizate de George Lucas in persoana.
+                        <delay>1</delay>
+                        Chiar daca fanii sunt divizati in privinta calitatii productie trilogia merita cu siguranta urmarita.
+                        <delay>1</delay>
+                        Ce episod doresti sa vizionezi?
+            			
+                	<button>
+                        <text>4.Star Wars: Episode I - The Phantom Menace</text>
+                        <postback> ^ Star Wars ^ Episode 1 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>5.Star Wars: Episode II - Attack of the Clones</text>
+                        <postback> ^ Star Wars ^ Episode 2 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>6.Star Wars: Episode III - Revenge of the Sith</text>
+                        <postback> ^ Star Wars ^ Episode 3 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Inapoi</text>
+                        <postback> ^ Star Wars ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 1 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg</image>
+                                
+                                <title>Star Wars: Episode I - The Phantom Menace</title>
+                                <subtitle>
+                                    Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode I - The Phantom Menace (1999) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0120915/?ref_=fn_tt_tt_17</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode I - The Phantom Menace (1999) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars:_Episode_I_%E2%80%93_The_Phantom_Menace</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Star Wars ^ Episode II ^ Attack of the Clones ^ </postback>
+                                </button>>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode I - The Phantom Menace</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/EUXx-A5khOw</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/PyisFK6dHnk</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/Pse_njnnR6w</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode I ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 1 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 1 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 1 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Phantom ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 1 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Menace ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 1 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 2 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/3/32/Star_Wars_-_Episode_II_Attack_of_the_Clones_%28movie_poster%29.jpg</image>
+                                
+                                <title>Star Wars: Episode II - Attack of the Clones</title>
+                                <subtitle>
+                                    Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padmé Amidala, while Obi-Wan Kenobi investigates an assassination attempt on the senator and discovers a secret clone army crafted for the Jedi.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode II - Attack of the Clones (2002) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0121765/?ref_=fn_tt_tt_26</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode II - Attack of the Clones (2002) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars:_Episode_II_%E2%80%93_Attack_of_the_Clones</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Star Wars ^ Episode I ^ The Phantom Menace ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Star Wars ^ Episode III ^ Revenge of the Sith ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode II - Attack of the Clones</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/NHdcd8BHsnw</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/hkwbJvgPdSY</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/DjrAIv4eMwk</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode II ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 2 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 2 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 2 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Attack ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 2 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Clones ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 2 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 3 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg</image>
+                                
+                                <title>Star Wars: Episode III - Revenge of the Sith</title>
+                                <subtitle>
+                                    Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode III - Revenge of the Sith (2005) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt0121766/?ref_=fn_tt_tt_24</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode III - Revenge of the Sith (2005) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Star Wars ^ Episode II ^ Attack of the Clones ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode III - Revenge of the Sith</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/cHvoWFUCbio</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/GYm9TprRBUk</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/9LlipsYsGuk</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode III ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 3 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 3 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 3 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Revenge ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 3 ^ </srai>
+                        
+                        </template>
+            		</category>
+                
+                <category>
+            	    
+                    <pattern> ^ Trilogia precedenta Star Wars ^ </pattern>
+                    <template>
+                        
+                        <random>
+	                        <li><image>https://media.giphy.com/media/3o7ZeTmU77UlPyeR2w/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/Ld77zD3fF3Run8olIt/giphy.gif</image></li>
+	                        <li><image>https://media.giphy.com/media/3ov9k9lbqXdhH2zl5e/giphy.gif</image></li>
+	                    </random>
+	                    
+                        <delay>1</delay>
+                        Aceasta trilogie a fost facuta sub tutela Disney de aceea se simte diferit.
+                        <delay>1</delay>
+                        Trilogia nu a fost apreciata de comunitatea Star Wars 🌟 dar celelalte filme si seriale a fost foarte indragite.
+                        <delay>1</delay>
+                        Ce episod doresti sa vizionezi?
+            			
+                	<button>
+                        <text>7.Star Wars: Episode VII - The Force Awakens</text>
+                        <postback> ^ Star Wars ^ Episode 7 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>8.Star Wars: Episode VIII - The Last Jedi</text>
+                        <postback> ^ Star Wars ^ Episode 8 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>9.Star Wars: Episode IX - The Rise of Skywalker</text>
+                        <postback> ^ Star Wars ^ Episode 9 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Inapoi</text>
+                        <postback> ^ Star Wars ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 7 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg</image>
+                                
+                                <title>Star Wars: Episode VII - The Force Awakens</title>
+                                <subtitle>
+                                    As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode VII - The Force Awakens (2015) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt2488496/?ref_=fn_tt_tt_20</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode VII - The Force Awakens (2015) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars:_The_Force_Awakens</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Star Wars ^ Episode VIII ^ The Last Jedi ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Star Wars: Episode VII - The Force Awakens</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/zBMW3y86cpo</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/UNfqzpCgu9k</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review Sean Chandler</text>
+                                    <url>https://youtu.be/aKp6eG4Zy30</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode VII ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 7 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 7 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 7 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Awakens ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 7 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Force ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 7 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 8 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/7/7f/Star_Wars_The_Last_Jedi.jpg</image>
+                                
+                                <title>Star Wars: Episode VIII - The Last Jedi</title>
+                                <subtitle>
+                                    Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode VIII - The Last Jedi (2017) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt2527336/?ref_=fn_tt_tt_14</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode VIII - The Last Jedi (2017) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars:_The_Last_Jedi</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Star Wars ^ Episode VII ^ The Force Awakens ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Star Wars ^ Episode IX ^ The Rise of Skywalker ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                
+                                <title>Star Wars: Episode VIII - The Last Jedi</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Recenzie Inca Ceva</text>
+                                    <url>https://youtu.be/daEdBjbUbCU</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Recenzie Sucre</text>
+                                    <url>https://youtu.be/a8dTjhkoL90</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/kjqkXyj3pKo</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode VIII ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 8 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 8 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 8 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Last ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 8 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode 9 ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/a/af/Star_Wars_The_Rise_of_Skywalker_poster.jpg</image>
+                                
+                                <title>Star Wars: Episode IX - The Rise of Skywalker</title>
+                                <subtitle>
+                                    The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Star Wars: Episode IX - The Rise of Skywalker (2019) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt2527338/?ref_=fn_tt_tt_5</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Star Wars: Episode IX - The Rise of Skywalker (2019) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Star Wars ^ Episode VIII ^ The Last Jedi ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ da ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                
+                                <title>Star Wars: Episode IX - The Rise of Skywalker</title>
+                                <subtitle>
+                                    Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Recenzie Inca Ceva</text>
+                                    <url>https://youtu.be/G6OVzsG9vws</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Recenzie Sucre</text>
+                                    <url>https://youtu.be/jbLJPLXPxYM</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/ZZ1-RcLT8IU</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Star Wars ^ Episode IX ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 9 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars 9 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 9 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Rise ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 9 ^ </srai>
+                        
+                        </template>
+            		</category>
+            		
+            		<category>
+                        <pattern> ^ Star Wars ^ Skywalker ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Star Wars ^ Episode 9 ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+            <category>
+        	    
+                <pattern> ^ Franciza Blade Runner ^ </pattern>
+                <template>
+                    <random>
+                        <li><image>https://media.giphy.com/media/8Dlx8S7TLVvz2/giphy.gif</image></li>
+                        <li><image>https://media.giphy.com/media/jtEcol5x5oHNx3qSn3/giphy.gif</image></li>
+                    </random>
+                    <delay>2</delay>
+                    Universul Blade Runner 🤖 nu este la fel de mare si cunoscuta ca Star Wars 🌟.
+                    <delay>1</delay>
+                    Cu toate acestea el a captivat publicul cu o poveste matura si un stil artistic propriu.
+                    <delay>1</delay>
+                    Ce film doresti sa privesti?
+        			
+            	<button>
+                    <text>Filmul clasic</text>
+                    <postback> ^ Blade Runner </postback>
+                </button>
+                
+                <button>
+                    <text>Filmul modern</text>
+                    <postback> ^ Blade Runner 2049 ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+            <category>
+                <pattern> ^ Filme Blade Runner ^ </pattern>
+                <template>
+                    
+    				<srai> ^ Franciza Blade Runner ^ </srai>
+                
+                </template>
+    		</category>
+            
+                <category>
+                    <pattern> ^ Blade Runner </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png</image>
+                            
+                            <title>Blade Runner</title>
+                            <subtitle>
+                                A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Blade Runner (1982) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0083658/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>Blade Runner (1982) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Blade_Runner</url>
+                            </button>
+                            
+                            <button>
+                                <text>Filmul urmator ⫸ </text>
+                                <postback> ^ Blade Runner 2049 ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Blade Runner</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/dzZs5iiKH0g</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Deepfocuslens</text>
+                                <url>https://youtu.be/DRdxJ6yLi34</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Cinemassacre</text>
+                                <url>https://youtu.be/XN5v2YsMjU8</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Blade Runner 1 ^ </pattern>
+                    <template>
+                        
+        				<srai> ^ Blade Runner </srai>
+                    
+                    </template>
+        		</category>
+                
+                <category>
+                    <pattern> ^ Blade Runner 2049 ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png</image>
+                            
+                            <title>Blade Runner 2049</title>
+                            <subtitle>
+                                Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Blade Runner 2049 (2017) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1856101/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Blade Runner 2049 (2017) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Blade_Runner_2049</url>
+                            </button>
+                            
+                            <button>
+                                <text> ⫷ Filmul anterior</text>
+                                <postback> ^ Blade Runner ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                            
+                            <title>Blade Runner 2049</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Recenzie Inca Ceva</text>
+                                <url>https://youtu.be/ENVYXgVCFIQ</url>
+                            </button>
+                           
+                            <button>
+                                <text>Recenzie Sucre</text>
+                                <url>https://youtu.be/9A63VzT7wtw</url>
+                            </button>
+                            
+                            <button>
+                                <text>Recenzie RFC</text>
+                                <url>https://youtu.be/beh0W-HJnT4</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Blade Runner 2 ^ </pattern>
+                    <template>
+                        
+        				<srai> ^ Blade Runner 2049 ^ </srai>
+                    
+                    </template>
+        		</category>
+                
+        <category>
+    	    
+            <pattern> ^ 6CSDrama9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Dramele in spatiul cosmic au adesea un scop final foarte maret.
+                <delay>1</delay>
+                Aici putem include de la prevenirea apocalipsei la cautarea adevarului si chiar pana la batalie contra spatiului in sine.
+                <delay>1</delay>
+                Pe tine ce te intriga mai mult?
+    			
+        	<button>
+                <text>Prevenirea apocalipsei</text>
+                <postback> ^ 6Prevenireaapocalipsei9 ^ </postback>
+            </button>
+            
+            <button>
+                <text>Natura umana vs. spatiul cosmic</text>
+                <postback> ^ 6Naturaumanavsspatiulcosmic9 ^ </postback>
+            </button>
+            
+            <button>
+                <text>Cautarea adevarului</text>
+                <postback> ^ 6Cautareaadevarului9 ^ </postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+        	</template>
+        	
+        </category>
+        
+            <category>
+        	    
+                <pattern> ^ 6Prevenireaapocalipsei9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Am pentru tine doua filme impecabile cu doi regizori pe masura.
+                    <delay>1</delay>
+                    Filmul lui Christopher Nolan are ca tema principala familia.
+                    <delay>1</delay>
+                    In timp ce filmul lui Danny Boyle abordeaza tema sacrificiului de sine.
+                    
+                    <button>
+                        <text>Arata-mi</text>
+                        <postback> ^ cnanddb ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+            	</template>
+            	
+            </category>
+            
+            <category>
+        	    
+                <pattern> ^ cnanddb ^ </pattern>
+                <template>
+                    
+                    <delay>2</delay>
+                    
+                <carousel>
+            	    
+            	    <card>
+            	        <image>https://upload.wikimedia.org/wikipedia/commons/9/95/Christopher_Nolan_Cannes_2018.jpg</image>
+                	       
+                	       <title>Christopher Nolan</title>
+                        <subtitle>Interstellar</subtitle>
+            	        
+                    	<button>
+                            <text>Film regizat de Christopher Nolan</text>
+                            <postback> ^ Interstellar ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Bruce Willis (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Christopher_Nolan</url>
+                        </button>
+                    
+                    </card>
+                    
+                    <card>
+                        
+                        <image>https://upload.wikimedia.org/wikipedia/commons/f/f0/Danny_Boyle_May_2019.jpg</image>
+                        
+            	        <title>Danny Boyle</title>
+            	        <subtitle>Sunshine</subtitle>
+                        
+                        <button>
+                            <text>Film regizat de Danny Boyle</text>
+                            <postback> ^ Sunshine ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Danny Boyle (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Danny_Boyle</url>
+                        </button>
+                    
+                    </card>
+                    
+                </carousel>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ Interstellar ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg</image>
+                            
+                            <title>Interstellar</title>
+                            <subtitle>
+                                A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Interstellar (2014) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>Interstellar (2014) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Interstellar_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                            
+                            <title>Interstellar</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Recenzie Inca Ceva</text>
+                                <url>https://youtu.be/pSsVKQZtOJs</url>
+                            </button>
+                           
+                            <button>
+                                <text>Recenzie Sucre</text>
+                                <url>https://youtu.be/lpo-K3JNeOc</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/nBeb5OAEwos</url>
+                            </button>
+                            
+                            <button>
+                                <text>De ce sa vezi Interstellar Inca Ceva</text>
+                                <url>https://youtu.be/ZD1hVT62bcw</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Sunshine ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/6/68/Sunshine_poster.jpg</image>
+                            
+                            <title>Sunshine</title>
+                            <subtitle>
+                                A team of international astronauts are sent on a dangerous mission to reignite the dying Sun with a nuclear fission bomb in 2057.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Sunshine (2007) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0448134/?ref_=nv_sr_srsg_6</url>
+                            </button>
+                            
+                            <button>
+                                <text>Sunshine (2007) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Sunshine_(2007_film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Sunshine</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Jeremy Hannaford</text>
+                                <url>https://youtu.be/gEf4CfhVuR4</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review WillFoxification</text>
+                                <url>https://youtu.be/7OgGggWnh98</url>
+                            </button>
+                            
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+            
+            <category>
+        	    
+                <pattern> ^ 6Naturaumanavsspatiulcosmic9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Am pentru tine doua filme asemanatoare ca premiza.
+                    <delay>1</delay>
+                    Dar ele se diferentiaza prin viziunea si stilul unic al regizorului.
+                    <delay>1</delay>
+                    Ce regizor te atrage cel mai mult?
+                    
+                    <button>
+                        <text>Arata-mi</text>
+                        <postback> ^ rsandac ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                
+            	</template>
+            	
+            </category>
+            
+            <category>
+        	    
+                <pattern> ^ rsandac ^ </pattern>
+                <template>
+                    
+                    <delay>2</delay>
+                    
+                <carousel>
+            	    
+            	    <card>
+            	        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/NASA_Journey_to_Mars_and_%E2%80%9CThe_Martian%22_%28201508180030HQ%29.jpg/900px-NASA_Journey_to_Mars_and_%E2%80%9CThe_Martian%22_%28201508180030HQ%29.jpg</image>
+                	       
+                	       <title>Ridley Scott</title>
+                        <subtitle>The Martian</subtitle>
+            	        
+                    	<button>
+                            <text>Film regizat de Ridley Scott</text>
+                            <postback> ^ Martian ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Ridley Scott (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Ridley_Scott</url>
+                        </button>
+                    
+                    </card>
+                    
+                    <card>
+                        
+                        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg/900px-Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg</image>
+                        
+            	        <title>Alfonso Cuarón</title>
+            	        <subtitle>Gravity</subtitle>
+                        
+                        <button>
+                            <text>Film regizat de Alfonso Cuarón</text>
+                            <postback> ^ Gravity ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Alfonso Cuarón (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Alfonso_Cuar%C3%B3n</url>
+                        </button>
+                    
+                    </card>
+                    
+                </carousel>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ Martian ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg</image>
+                            
+                            <title>The Martian</title>
+                            <subtitle>
+                                An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.
+                            </subtitle>
+                                
+                            <button>
+                                <text>The Martian (2015) IMDb</text>
+                                <url>https://www.imdb.com/title/tt3659388/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>The Martian (2015) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/The_Martian_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>The Martian</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/Qypj9LrOpio</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/npqN59tlPDg</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review The Flick Pick</text>
+                                <url>https://youtu.be/EQUzoKe_or8</url>
+                            </button>
+                            
+                            <button>
+                                <text>Cartea "The Martian" by Andy Weir (Amazon)</text>
+                                <url>https://www.amazon.com/Martian-Andy-Weir/dp/0553418025</url>
+                            </button>
+                            
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Gravity ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/f/f6/Gravity_Poster.jpg</image>
+                            
+                            <title>Gravity</title>
+                            <subtitle>
+                                Two astronauts work together to survive after an accident leaves them stranded in space.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Gravity (2013) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1454468/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>Gravity (2013) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Gravity_(2013_film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Gravity</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/Bt6Yh0qp0KE</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/_0Kz8sbqdmM</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review IGN</text>
+                                <url>https://youtu.be/wpxmamS6Ybc</url>
+                            </button>
+                            
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+            
+            <category>
+        	    
+                <pattern> ^ 6Cautareaadevarului9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Am pentru tine doua filme foarte simbolistice.
+                    <delay>1</delay>
+                    In acestea vei descoperi fiziunea despre lume al regizorilor care le-au creat.
+                    <delay>1</delay>
+                    Alege unul dintre acesti regizori.
+                    
+                    <button>
+                        <text>Arata-mi</text>
+                        <postback> ^ skandjg ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                
+            	</template>
+            	
+            </category>
+            
+            <category>
+        	    
+                <pattern> ^ skandjg ^ </pattern>
+                <template>
+                    
+                    <delay>2</delay>
+                    
+                <carousel>
+            	    
+            	    <card>
+            	        <image>https://m.media-amazon.com/images/M/MV5BMTIwMzAwMzg1MV5BMl5BanBnXkFtZTYwMjc4ODQ2._V1_UY1200_CR82,0,630,1200_AL_.jpg</image>
+                	       
+                	       <title>Stanley Kubrick</title>
+                        <subtitle>2001: A Space Odyssey</subtitle>
+            	        
+                    	<button>
+                            <text>Film regizat de Stanley Kubrick</text>
+                            <postback> ^ Space Odyssey ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Stanley Kubrick (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Stanley_Kubrick</url>
+                        </button>
+                    
+                    </card>
+                    
+                    <card>
+                        
+                        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/MJK34332_James_Gray_%28The_Lost_City_Of_Z%2C_Berlinale_2017%29.jpg/800px-MJK34332_James_Gray_%28The_Lost_City_Of_Z%2C_Berlinale_2017%29.jpg</image>
+                        
+            	        <title>James Gray</title>
+            	        <subtitle>Ad Astra</subtitle>
+                        
+                        <button>
+                            <text>Film regizat de James Gray</text>
+                            <postback> ^ Ad Astra ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre James Gray (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/James_Gray_(director)</url>
+                        </button>
+                    
+                    </card>
+                    
+                </carousel>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ Space Odyssey ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png</image>
+                            
+                            <title>2001: A Space Odyssey</title>
+                            <subtitle>
+                                After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000.
+                            </subtitle>
+                                
+                            <button>
+                                <text>2001: A Space Odyssey (1968) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0062622/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>2001: A Space Odyssey (1968) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>2001: A Space Odyssey</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Recenzie Inca Ceva</text>
+                                <url>https://youtu.be/uzLKt6xq3ro</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/dl5P0qnPvWM</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Deepfocuslens</text>
+                                <url>https://youtu.be/iXd_KROHv3A</url>
+                            </button>
+                            
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Ad Astra ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/c/cb/Ad_Astra_-_film_poster.jpg</image>
+                            
+                            <title>Ad Astra</title>
+                            <subtitle>
+                                Astronaut Roy McBride undertakes a mission across an unforgiving solar system to uncover the truth about his missing father and his doomed expedition that now, 30 years later, threatens the universe.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Ad Astra (2019) IMDb</text>
+                                <url>https://www.imdb.com/title/tt2935510/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Ad Astra (2019) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Ad_Astra_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ da ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Ad Astra</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/XApJQ6AGDwA</url>
+                            </button>
+                            
+                            <button>
+                                <text>Recenzie FilmZoom</text>
+                                <url>https://youtu.be/yOqMYEdczMM</url>
+                            </button>
+                           
+                            <button>
+                                <text>Recenzie RFC</text>
+                                <url>https://youtu.be/YxIpFG4Tyek</url>
+                            </button>
+                            
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+        
+</aiml>

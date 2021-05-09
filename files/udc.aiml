@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    	
+        <category>
+            <pattern> ^ Buna ^ </pattern>
+            
+            <template>
+                
+                
+                <condition name="start">
+                    
+                    <li value="unknown">
+                        
+                        <delay>1</delay>
+                        Salutare! Numele meu este <bot name="name" /> iar obiectivul meu este sa te ajut pe tine sa iti gasesti filmul SF preferat.
+                
+                        <button>
+                           <text>Sa incepem!</text>
+                           <postback> ^ sa incepem ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name="start">full</set>
+                        </think>
+                        
+                        <think>
+        	                <set name = "wrong">phase1</set>
+        	            </think>
+                        
+                        <think>
+                            <set name="topic">saincepem</set>
+                        </think>
+                        
+                    </li>
+                    
+                    <li value="full">
+                        
+                        <srai> * </srai>
+                        
+                    </li>
+                    
+                </condition>
+                
+            </template>
+        </category>
+      
+           <category>
+                <pattern> ^ Sal ^ </pattern>
+                <template>
+                    
+        		<srai> ^ Buna ^ </srai>
+        		
+        		</template>
+             </category>
+          
+            <category>
+                <pattern> ^ Hey ^ </pattern>
+                <template>
+                    
+                <srai> ^ Buna ^ </srai>
+                
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ Salut ^ </pattern>
+                <template>
+                    
+                <srai> ^ Buna ^ </srai>
+                
+                </template>
+            </category>
+      
+            <category>
+                <pattern> ^ Salutare ^ </pattern>
+                <template>
+                    
+                <srai> ^ Buna ^ </srai>
+                
+                </template>
+            </category>
+    
+            <category>
+                <pattern> ^ Hello ^ </pattern>
+                <template>
+                    
+                <srai> ^ Buna ^ </srai>
+                
+                </template>
+            </category>
+    
+            <category>
+                <pattern> ^ Hei ^ </pattern>
+                <template>
+                    
+                <srai> ^ Buna ^ </srai>
+                
+                </template>
+            </category>
+    
+            <category>
+                <pattern> ^ Hi ^ </pattern>
+                <template>
+                    
+                <srai> ^ Buna ^ </srai>
+                
+                </template>
+            </category>
+    	
+    	<category>
+            <pattern> ^ Hello there ^ </pattern>
+            
+            <template>
+                
+                
+                <condition name="start">
+                    
+                    <li value="unknown">
+                        
+                        <delay>1</delay>
+                        <video>https://thumbs.gfycat.com/DeterminedLateBigmouthbass-mobile.mp4</video>
+                        <delay>2</delay>
+                        Salutare! Numele meu este <bot name="name" /> iar obiectivul meu este sa te ajut pe tine sa iti gasesti filmul SF preferat.
+                
+                        <button>
+                           <text>Sa incepem!</text>
+                           <postback> ^ sa incepem ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name="start">full</set>
+                        </think>
+                        
+                        <think>
+        	                <set name = "wrong">phase1</set>
+        	            </think>
+                        
+                        <think>
+                            <set name="topic">saincepem</set>
+                        </think>
+                        
+                    </li>
+                    
+                    <li value="full">
+                        
+                        <srai> * </srai>
+                        
+                    </li>
+                    
+                </condition>
+                
+            
+            </template>
+        </category>
+    
+    <topic name="saincepem">
+    
+            <category>
+                <pattern> ^ sa incepem ^ </pattern>
+                
+                <template>
+                    <delay>1</delay>
+                    In primul rand doresc sa iti pun cateva intrebari generale.
+                    <delay>1</delay>
+                    Raspunsurile tale vor ajuta la construirea unei experiente cat mai placute.
+                    <delay>1</delay>
+                    Esti de acord?
+                    
+                    <think>
+                        <set name="topic">saincepem1</set>
+                    </think>
+                    
+                    <think>
+        	           <set name = "wrong">phase1</set>
+        	        </think>
+                
+                </template>
+            </category>
+            
+        <topic name="saincepem1">
+            
+            <category>
+                <pattern> ^ da ^ </pattern>
+                
+                <template>
+                    <delay>1</delay>
+                    Prefect! Ma bucur ca doresti sa colaborezi.
+                    <delay>1</delay>
+                    ⚠️ Poti raspunde cu "pass" pentru a sari peste o intrebare.
+                    
+                    <button>
+                        <text>Prima intrebare</text>
+                        <postback> ^ Prima intrebare ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name="topic">intrebari</set>
+                    </think>
+                    
+                    <think>
+        	           <set name = "wrong">phase1</set>
+        	        </think>
+                    
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ desigur ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ da ^ </srai>
+                    
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ cum sa nu ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ da ^ </srai>
+                    
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ yes ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ da ^ </srai>
+                    
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ dap ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ da ^ </srai>
+                    
+                </template>
+            </category>
+            
+            <topic name="intrebari">
+            
+                <category>
+                    <pattern> ^ Prima intrebare ^ </pattern>
+                    
+                    <template>
+                        <delay>1</delay>
+                        <random>
+                                
+                            <li>Care este numele tau?</li>
+                            <li>Cum te numesti?</li>
+                            <li>Ce nume ai?</li>
+                                
+                        </random>
+                        
+                        <think>
+        	                <set name = "wrong">phase1</set>
+        	            </think>
+        	            
+        	            <think>
+        	                <set name = "topic">prima</set>
+        	            </think>
+                        
+                    </template>
+                </category>
+                
+                <topic name="prima">
+                
+                <category>
+                    <pattern> Numele meu este * </pattern>
+                    <template>
+                        
+                        <condition name="pass1">
+                            
+                            <li value="unknown">
+                                
+                                <delay>1</delay>
+                                Imi pare bine sa te cunosc, <first><sentence><set name="name"><star /></set></sentence></first>.
+                                
+                                <button>
+                                    <text>A doua intrebare</text>
+                                    <postback> ^ A doua intrebare ^ </postback>
+                                </button>
+                                
+                                <think>
+                	                <set name = "wrong">phase1</set>
+                	            </think>
+                	            
+                	            <think>
+                	                <set name = "pass1">no</set>
+                	            </think>
+                                
+                            </li>
+                            
+                            <li value="no">
+                                
+                                <srai> * </srai>
+                                
+                            </li>
+                            
+                        </condition>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> Ma numesc * </pattern>
+                    <template>
+                        
+                        <condition name="pass1">
+                            
+                            <li value="unknown">
+                                
+                                <delay>1</delay>
+                                Imi pare bine sa te cunosc, <first><sentence><set name="name"><star /></set></sentence></first>.
+                                
+                                <button>
+                                    <text>A doua intrebare</text>
+                                    <postback> ^ A doua intrebare ^ </postback>
+                                </button>
+                                
+                                <think>
+                	                <set name = "wrong">phase1</set>
+                	            </think>
+                	            
+                	            <think>
+                	                <set name = "pass1">no</set>
+                	            </think>
+                                
+                            </li>
+                            
+                            <li value="no">
+                                
+                                <srai> * </srai>
+                                
+                            </li>
+                            
+                        </condition>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> Eu ma numesc * </pattern>
+                    <template>
+                        
+                        <condition name="pass1">
+                            
+                            <li value="unknown">
+                                
+                                <delay>1</delay>
+                                Imi pare bine sa te cunosc, <first><sentence><set name="name"><star /></set></sentence></first>.
+                                
+                                <button>
+                                    <text>A doua intrebare</text>
+                                    <postback> ^ A doua intrebare ^ </postback>
+                                </button>
+                                
+                                <think>
+                	                <set name = "wrong">phase1</set>
+                	            </think>
+                	            
+                	            <think>
+                	                <set name = "pass1">no</set>
+                	            </think>
+                                
+                            </li>
+                            
+                            <li value="no">
+                                
+                                <srai> * </srai>
+                                
+                            </li>
+                            
+                        </condition>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> pass </pattern>
+                    <template>
+                        
+                        <condition name="pass1">
+                            
+                            <li value="unknown">
+                                
+                                <delay>1</delay>
+                                Ai sarit peste prima intrebare.
+                                <delay>1</delay>
+                                Sper ca urmatoarea sa fie pe placul tau.
+                                
+                                <button>
+                                    <text>A doua intrebare</text>
+                                    <postback> ^ A doua intrebare ^ </postback>
+                                </button>
+                                
+                                <think>
+                	                <set name = "wrong">phase1</set>
+                	            </think>
+                	            
+                	            <think>
+                	                <set name = "pass1">no</set>
+                	            </think>
+                                
+                            </li>
+                            
+                            <li value="no">
+                                
+                                <srai> * </srai>
+                                
+                            </li>
+                            
+                        </condition>
+                        
+                        
+                        
+                    </template>
+                </category>
+            
+                    <category>
+                        <pattern> ^ A doua intrebare ^ </pattern>
+                        
+                        <template>
+                            <delay>1</delay>
+                            Ai peste 18 ani?
+                            
+                            <think>
+        	                    <set name = "wrong">phase1</set>
+        	                </think>
+        	                
+        	                <think>
+                            <set name="topic">adoua</set>
+                            </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <topic name="adoua">
+                    
+                    <category>
+                        <pattern> ^ da ^ </pattern>
+                        <template>
+                            
+                            <condition name="pass2">
+                                
+                                <li value="unknown">
+                                    
+                                    <delay>1</delay>
+                                    Multi inainte! 🎆🎉
+                                    <delay>1</delay>
+                                    Acest rapuns iti va dezvalui sectiunea de +18 de la Superheroes 🦸‍♂️ ⫸ Comedy🤣.
+                                    
+                                    <button>
+                                        <text>Ulitma intrebare</text>
+                                        <postback> ^ Ultima intrebare ^ </postback>
+                                    </button>
+                                    
+                                    <think>
+                                        <set name="+18">da</set>
+                                    </think>
+                                    
+                                    <think>
+                	                    <set name = "wrong">phase1</set>
+                	                </think>
+                	                
+                	                <think>
+                	                    <set name = "pass2">no</set>
+                	                </think>
+                                    
+                                </li>
+                                
+                                <li value="no">
+                                    
+                                    <srai> * </srai>
+                                    
+                                </li>
+                                
+                            </condition>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ desigur ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ da ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ sigur ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ da ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ cu siguranta ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ da ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ cum sa nu ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ da ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ yes ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ da ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ dap ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ da ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ nu ^ </pattern>
+                        <template>
+                            
+                            <condition name="pass2">
+                                
+                                <li value="unknown">
+                                    
+                                    <delay>1</delay>
+                                    Nu iti face griji!
+                                    <delay>1</delay>
+                                    Pot recomanda filme pentru toate varstele 👍.  
+                                            
+                                    <button>
+                                        <text>Ulitma intrebare</text>
+                                        <postback> ^ Ultima intrebare ^ </postback>
+                                    </button>
+                                    
+                                    <think>
+                                        <set name="+18">da</set>
+                                    </think>
+                                    
+                                    <think>
+                	                    <set name = "wrong">phase1</set>
+                	                </think>
+                	                
+                	                <think>
+                	                    <set name = "pass2">no</set>
+                	                </think>
+                                    
+                                </li>
+                                
+                                <li value="no">
+                                    
+                                    <srai> * </srai>
+                                    
+                                </li>
+                                
+                            </condition>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ nope ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ nu ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ desigur ca nu ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ nu ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ niciodata ^ </pattern>
+                        
+                        <template>
+                            
+                            <srai> ^ nu ^ </srai>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> pass </pattern>
+                        <template>
+                            
+                            <condition name="pass2">
+                                
+                                <li value="unknown">
+                                    
+                                    <delay>1</delay>
+                                    Ai sarit peste a doua intrebare.
+                                    <delay>1</delay>
+                                    Sper ca urmatoarea sa fie pe placul tau.
+                                    
+                                    <button>
+                                        <text>Ultima intrebare</text>
+                                        <postback> ^ Ultima intrebare ^ </postback>
+                                    </button>
+                                    
+                                    <think>
+                	                    <set name = "wrong">phase1</set>
+                	                </think>
+                	                
+                	                <think>
+                	                    <set name = "pass2">no</set>
+                	                </think>
+                                    
+                                </li>
+                                
+                                <li value="no">
+                                    
+                                    <srai> * </srai>
+                                    
+                                </li>
+                                
+                            </condition>
+                            
+                        </template>
+                    </category>
+                        
+                        <category>
+                            <pattern> ^ Ultima intrebare ^ </pattern>
+                            <template>
+                                
+                                <delay>1</delay>
+                                Care este lucrul tau preferat?
+                                
+                                <think>
+        	                        <set name = "wrong">phase1</set>
+        	                    </think>
+        	                    
+        	                    <think>
+                                    <set name="topic">ultima</set>
+                                </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <topic name="ultima">
+                        
+                        <category>
+                            <pattern> Lucrul meu preferat este * </pattern>
+                            <template>
+                                
+                                <condition name="pass3">
+                                    
+                                    <li value="unknown">
+                                        
+                                        <delay>1</delay>
+                                        Adorabil!
+                                        <delay>1</delay>
+                                        Astea au fost toate intrebarile, multumesc pentru raspunsuri.
+                                        <delay>1</delay>
+                                        ⚠️ Poti scrie oricand "cine sunt" pentru a vedea raspunsurile.
+                                        <split/>
+                                        ⚠️ Antentie! Asta te va forta sa alegi alt film.
+                                        
+                                        <button>
+                                            <text>Mergi mai departe ⫸ </text>
+                                            <postback> ^ Mergi mai departe ^ </postback>
+                                        </button>
+                                        
+                                        <think>
+                                            <sentence>
+                                                <set name="lucrupreferat"><star /></set>
+                                            </sentence>
+                                        </think>
+                                        
+                                        <think>
+                	                        <set name = "wrong">phase1</set>
+                	                    </think>
+                	                    
+                	                    <think>
+                	                        <set name = "pass3">no</set>
+                	                    </think>
+                                        
+                                    </li>
+                                    
+                                    <li value="no">
+                                        
+                                        <srai> * </srai>
+                                        
+                                    </li>
+                                    
+                                </condition>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> Preferatul meu este * </pattern>
+                            <template>
+                                
+                                <condition name="pass3">
+                                    
+                                    <li value="unknown">
+                                        
+                                        <delay>1</delay>
+                                        Adorabil!
+                                        <delay>1</delay>
+                                        Astea au fost toate intrebarile, multumesc pentru raspunsuri.
+                                        <delay>1</delay>
+                                        ⚠️ Poti scrie oricand "cine sunt" pentru a vedea raspunsurile.
+                                        <split/>
+                                        ⚠️ Antentie! Asta te va forta sa alegi alt film.
+                                        
+                                        <button>
+                                            <text>Mergi mai departe ⫸ </text>
+                                            <postback> ^ Mergi mai departe ^ </postback>
+                                        </button>
+                                        
+                                        <think>
+                                            <sentence>
+                                                <set name="lucrupreferat"><star /></set>
+                                            </sentence>
+                                        </think>
+                                        
+                                        <think>
+                	                        <set name = "wrong">phase1</set>
+                	                    </think>
+                	                    
+                	                    <think>
+                	                        <set name = "pass3">no</set>
+                	                    </think>
+                                        
+                                    </li>
+                                    
+                                    <li value="no">
+                                        
+                                        <srai> * </srai>
+                                        
+                                    </li>
+                                    
+                                </condition>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> Prefer * </pattern>
+                            <template>
+                                
+                                <condition name="pass3">
+                                    
+                                    <li value="unknown">
+                                        
+                                        <delay>1</delay>
+                                        Adorabil!
+                                        <delay>1</delay>
+                                        Astea au fost toate intrebarile, multumesc pentru raspunsuri.
+                                        <delay>1</delay>
+                                        ⚠️ Poti scrie oricand "cine sunt" pentru a vedea raspunsurile.
+                                        <split/>
+                                        ⚠️ Antentie! Asta te va forta sa alegi alt film.
+                                        
+                                        <button>
+                                            <text>Mergi mai departe ⫸ </text>
+                                            <postback> ^ Mergi mai departe ^ </postback>
+                                        </button>
+                                        
+                                        <think>
+                                            <sentence>
+                                                <set name="lucrupreferat"><star /></set>
+                                            </sentence>
+                                        </think>
+                                        
+                                        <think>
+                	                        <set name = "wrong">phase1</set>
+                	                    </think>
+                	                    
+                	                    <think>
+                	                        <set name = "pass3">no</set>
+                	                    </think>
+                                        
+                                    </li>
+                                    
+                                    <li value="no">
+                                        
+                                        <srai> * </srai>
+                                        
+                                    </li>
+                                    
+                                </condition>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> Eu prefer * </pattern>
+                            <template>
+                                
+                                <condition name="pass3">
+                                    
+                                    <li value="unknown">
+                                        
+                                        <delay>1</delay>
+                                        Adorabil!
+                                        <delay>1</delay>
+                                        Astea au fost toate intrebarile, multumesc pentru raspunsuri.
+                                        <delay>1</delay>
+                                        ⚠️ Poti scrie oricand "cine sunt" pentru a vedea raspunsurile.
+                                        <split/>
+                                        ⚠️ Antentie! Asta te va forta sa alegi alt film.
+                                        
+                                        <button>
+                                            <text>Mergi mai departe ⫸ </text>
+                                            <postback> ^ Mergi mai departe ^ </postback>
+                                        </button>
+                                        
+                                        <think>
+                                            <sentence>
+                                                <set name="lucrupreferat"><star /></set>
+                                            </sentence>
+                                        </think>
+                                        
+                                        <think>
+                	                        <set name = "wrong">phase1</set>
+                	                    </think>
+                	                    
+                	                    <think>
+                	                        <set name = "pass3">no</set>
+                	                    </think>
+                                        
+                                    </li>
+                                    
+                                    <li value="no">
+                                        
+                                        <srai> * </srai>
+                                        
+                                    </li>
+                                    
+                                </condition>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> pass </pattern>
+                            <template>
+                                
+                                <condition name="pass3">
+                                    
+                                    <li value="unknown">
+                                        
+                                        <delay>1</delay>
+                                        Ai sarit peste ultima intrebare.
+                                        <delay>1</delay>
+                                        Astea au fost toate intrebarile, multumesc pentru raspunsuri.
+                                        <delay>1</delay>
+                                        ⚠️ Poti scrie oricand "cine sunt" pentru a vedea raspunsurile.
+                                        <split/>
+                                        ⚠️ Antentie! Asta te va forta sa alegi alt film.
+                                        
+                                        <button>
+                                            <text>Mergi mai departe ⫸ </text>
+                                            <postback> ^ Mergi mai departe ^ </postback>
+                                        </button>
+                                
+                                        <think>
+                	                        <set name = "wrong">phase1</set>
+                	                    </think>
+                	                    
+                	                    <think>
+                	                        <set name = "pass3">no</set>
+                	                    </think>
+                                        
+                                    </li>
+                                    
+                                    <li value="no">
+                                        
+                                        <srai> * </srai>
+                                        
+                                    </li>
+                                    
+                                </condition>
+                            
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Mergi mai departe ^ </pattern>
+                            <template>
+                                <delay>1</delay>
+                                ⚠️ Poti scrie oricand "reset" pentru a reseta toate raspunsurile.
+                                <split/>
+                                ⚠️ Atentie! Aceasta actiune te va forta sa o iei de la inceput.
+                                <delay>1</delay>
+                                Am pregatit pentru tine o prezentare cu toate cunostintele si optiunile pe care le detin.
+                                <delay>1</delay>
+                                Doresti sa vezi acesta prezentare sau trecem direct la filme?
+                                
+                                <button>
+                                    <text>Prezentare</text>
+                                    <postback> ^ Prezentare ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Direct la filme</text>
+                                    <postback> ^ categorie de filme ^ </postback>
+                                </button>
+                                
+                                <think>
+                    	           <set name = "wrong">phase1</set>
+                                </think>
+                                
+                            </template>
+                            
+                        </category>
+                        
+                    </topic>
+            
+                </topic>
+                
+                </topic>
+            
+            </topic>
+            
+            <category>
+                <pattern> ^ nu ^ </pattern>
+                
+                <template>
+                    <delay>1</delay>
+                    Nici o problema! Pana la urma filmul este cel ce conteaza.
+                    <delay>1</delay>
+                    Am pregatit pentru tine o prezentare cu toate cunostintele si optiunile pe care le detin.
+                    <delay>1</delay>
+                    Doresti sa vezi acesta prezentare sau trecem direct la filme?
+                    
+                    <button>
+                        <text>Prezentare</text>
+                        <postback> ^ Prezentare ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Direct la filme</text>
+                        <postback> ^ categorie de filme ^ </postback>
+                    </button>
+                    
+                    <think>
+        	           <set name = "wrong">phase1</set>
+                    </think>
+                
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ nope ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ nu ^ </srai>
+                    
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ desigur ca nu ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ nu ^ </srai>
+                    
+                </template>
+            </category>
+            
+            <category>
+                <pattern> ^ niciodata ^ </pattern>
+                
+                <template>
+                    
+                    <srai> ^ nu ^ </srai>
+                    
+                </template>
+            </category>
+            
+        </topic>
+            
+    </topic>
+    
+    <category>
+        <pattern> ^ Prezentare ^ </pattern>
+        <template>
+            <delay>1</delay>
+            ⚠️ Poti scrie oricand "prezentare" pentru a reveni aici.
+            <split/>
+            ⚠️ Antentie! Asta te va forta sa alegi alt film.
+            <split/>
+            Prezentarea va incepe imediat...
+            <delay>3</delay>
+            
+            <carousel>
+                
+                <card>
+                    
+                    <image>https://media.giphy.com/media/l44QzsOLXxcrigdgI/giphy.gif</image>
+                    
+                    <title>Ce stiu sa fac?</title>
+                    <subtitle>In principal stiu sa recomand filme care de care mai diverse.</subtitle>
+                    
+                    <button>
+                        <text>Mai multe detalii 🧠</text>
+                        <postback> ^ 6detalii19 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Cauta un film</text>
+                        <postback> ^ filme ^ </postback>
+                    </button>
+                    
+                </card>
+                
+                <card>
+                    
+                    <image>https://media.giphy.com/media/mP47tgdWChow8/giphy.gif</image>
+                    
+                    <title>Ok! Dar va fi distractiv?</title>
+                    <subtitle>Daca prin distractie te referi la emoji, gif-uri si memes atunci da.</subtitle>
+                    
+                    <button>
+                        <text>Mai multe detalii 🤭</text>
+                        <postback> ^ 6detalii29 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Cauta un film</text>
+                        <postback> ^ filme ^ </postback>
+                    </button>
+                    
+                </card>
+                
+                <card>
+                    
+                    <image>https://media.giphy.com/media/JzujPK0id34qI/giphy.gif</image>
+                    
+                    <title>Ai privit deja filmul recomandat?</title>
+                    <subtitle>Nici o problema! Poti alege alt film asemanator.</subtitle>
+                    
+                    <button>
+                        <text>Mai multe detalii 💥</text>
+                        <postback> ^ 6detalii39 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Cauta un film</text>
+                        <postback> ^ filme ^ </postback>
+                    </button>
+                    
+                </card>
+                
+                <card>
+                    
+                    <image>https://media.giphy.com/media/10PaGJNjPDgTCw/giphy.gif</image>
+                    
+                    <title>Stii deja ce film sf te intereseaza?</title>
+                    <subtitle>Scrie numele lui pentru informatii si recenzii.</subtitle>
+                    
+                    <button>
+                        <text>Mai multe detalii 🤹‍♂️️</text>
+                        <postback> ^ 6detalii39 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Cauta un film</text>
+                        <postback> ^ filme ^ </postback>
+                    </button>
+                    
+                </card>
+                
+                <card>
+                    
+                    <image>https://media.giphy.com/media/lRnUWhmllPI9a/giphy.gif</image>
+                    
+                    <title>Nu stii ce vrei sa privesti?</title>
+                    <subtitle>Foloseste comenzile pentru recomandari rapide.</subtitle>
+                    
+                    <button>
+                        <text>Mai multe detalii ⚡</text>
+                        <postback> ^ 6detalii39 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Cauta un film</text>
+                        <postback> ^ filme ^ </postback>
+                    </button>
+                    
+                </card>
+                
+            </carousel>
+            
+        </template>
+        
+    </category>
+        
+        <category>
+            <pattern> ^ filme ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Este timpul sa gasim filmul potrivit pentru tine.
+                <delay>1</delay>
+                Alege din ce subgen vrei sa faca parte filmul.
+    			
+    		<button>
+                <text>Superheroes 🦸‍♂️</text>
+                <postback> ^ Superheroes ^ </postback>
+            </button>
+            
+            <button>
+                <text>Alien 👽</text>
+                <postback> ^ Alien ^ </postback>
+            </button>
+            
+            <button>
+                <text>Post-Apocalyptic ☠️</text>
+                <postback> ^ Post ^ apocalyptic ^ </postback>
+            </button>
+            
+            <button>
+                <text>Cosmic space 🚀</text>
+                <postback> ^ Cosmic space ^ </postback>
+            </button>
+            
+            <button>
+                <text>Speculative fiction ✨</text>
+                <postback>^ Speculative Fiction ^ </postback>
+            </button>
+            
+            <think>
+        	    <set name = "subgen">nogen</set>
+            </think>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+    		</template>
+        </category>
+            
+</aiml>
+
+        
+            

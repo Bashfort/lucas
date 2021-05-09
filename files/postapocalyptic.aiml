@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+        <pattern> ^ Post ^ apocalyptic ^ </pattern>
+        <template>
+            <delay>1</delay>
+            Filmele din acesta categorie exploreaza modalitati prin care ar putea sfarsi rasa umana.
+            <delay>1</delay>
+            De la dezastre naturale 🌊 si razboaie mondiale 💣 sau nucleare ☢️ pana la zombi 🧟 si natalitate zero 👶.
+            <delay>1</delay>
+            Alege un subgen pentru filmul tau.
+            
+    			
+        	<button>
+                <text>Action 😎</text>
+                <postback> ^ 6PAAction9 ^ </postback>
+                </button>
+        
+            <button>
+                <text>Drama 🎭</text>
+                <postback> ^ 6PADrama9 ^</postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+            <think>
+                <set name = "subgen">postap</set>
+            </think>
+                
+        </template>
+    </category>
+    
+        <category>
+            <pattern> ^ 6PAAction9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Sfarsitul lumii este utilizat atat in filme solo cat si in francize mari.
+                <delay>1</delay>
+                Pe tine ce te-ar interesa cel mai mult?
+        			
+            	<button>
+                    <text>Film solo</text>
+                    <postback> ^ 6FilmsoloPA9 ^ </postback>
+                    </button>
+            
+                <button>
+                    <text>Franciza</text>
+                    <postback> ^ 6FrancizaPA9 ^</postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                    
+            </template>
+        </category>
+        
+            <category>
+                <pattern> ^ 6FilmsoloPA9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Pentru ca lumea 🌎 sa se afle intr-un scenariu apocaliptic ☠️ un eveniment mare trebuie sa aiba loc.
+                    <delay>1</delay>
+                    Acest eveniment poate fi provocat de natura 🍂 sau chiar de om 👨.
+                    <delay>1</delay>
+                    Ce eveniment ti se pare mai palpitant?
+            			
+                	<button>
+                        <text>Al treilea razboi mondial 💣</text>
+                        <postback> ^ Equilibrium ^ </postback>
+                        </button>
+                
+                    <button>
+                        <text>Dezastre naturale 🌊</text>
+                        <postback> ^ Dezastre naturale ^</postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                </template>
+            </category>
+                
+                <category>
+                    <pattern> ^ Equilibrium ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/f/f6/Equilibriumposter.jpg</image>
+                            
+                            <title>Equilibrium</title>
+                            <subtitle>
+                                In an oppressive future where all forms of feeling are illegal, a man in charge of enforcing the law rises to overthrow the system and state.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Equilibrium (2002) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0238380/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Equilibrium (2002) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Equilibrium_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Equilibrium</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review JoBlo</text>
+                                <url>https://youtu.be/nhjTtWMwrHM</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Dave Cullen</text>
+                                <url>https://youtu.be/yPIlBfyqwuY</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review CINECISM</text>
+                                <url>https://youtu.be/W7f60-jsBCM</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Dezastre naturale ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/d/dd/2012_Poster.jpg</image>
+                            
+                            <title>2012</title>
+                            <subtitle>
+                                A frustrated writer struggles to keep his family alive when a series of global catastrophes threatens to annihilate mankind.
+                            </subtitle>
+                                
+                            <button>
+                                <text>2012 (2009) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1190080/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>2012 (2009) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/2012_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+  
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>2012</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/k_A2ssjwpgs</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Armarti</text>
+                                <url>https://youtu.be/ejov8xYW0n4</url>
+                            </button>
+                            
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+            <category>
+                
+                <pattern> ^ 6FrancizaPA9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    In prima franciza urmaresti aventurile lui Max 🤠 prin desertul postapocaliptic ☢️.
+                    <delay>1</delay>
+                    In a doua franciza niste maimute vorbitoare 🐒 vor sa cuceresca planeta 🌍.
+                    <delay>1</delay>
+                    Doua premize foarte interesante, care este preferata ta?
+            			
+                	<button>
+                        <text>Mad Max ⚙️</text>
+                        <postback> ^ Franciza Mad Max ^ </postback>
+                        </button>
+                
+                    <button>
+                        <text>Planet of the Apes 🐒</text>
+                        <postback> ^ Franciza Planet ^ Apes ^</postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                </template>
+                
+            </category>
+            
+                <category>
+                    
+                    <pattern> ^ Franciza Mad Max ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        Poti alege sa vizionezi trilogia clasica sau adaptarea moderna.
+                        <delay>1</delay>
+                        Toate filmele sunt regizare de George Miller asa ca nu ai cum sa dai gres.
+                        <delay>1</delay>
+                        Ce doresti sa privesti?
+                			
+                    	<button>
+                            <text>Trilogia clasica</text>
+                            <postback> ^ Trilogia Mad Max ^ </postback>
+                            </button>
+                    
+                        <button>
+                            <text>Filmul modern</text>
+                            <postback> ^ Mad Max ^ Fury ^</postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                    </template>
+                    
+                </category>
+                
+                    <category>
+                        <pattern> ^ Mad Max ^ Fury ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg</image>
+                                
+                                <title>Mad Max: Fury Road</title>
+                                <subtitle>
+                                    In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Mad Max: Fury Road (2015) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt1392190/?ref_=nv_sr_srsg_0</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Mad Max: Fury Road (2015) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Mad_Max:_Fury_Road</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Mad Max: Fury Road</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/4fk9yPZX_NM</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/bjaZ_Zd4pdk</url>
+                                </button>
+                               
+                                <button>
+                                    <text>Review The Flick Pick</text>
+                                    <url>https://youtu.be/EfaUUvKWICo</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                    
+                        <pattern> ^ Trilogia Mad Max ^ </pattern>
+                        <template>Alege un film
+                    			
+                        	<button>
+                                <text>1.Mad Max</text>
+                                <postback> ^ Mad Max </postback>
+                                </button>
+                        
+                            <button>
+                                <text>2.The Road Warrior</text>
+                                <postback> ^ Road Warrior ^</postback>
+                            </button>
+                            
+                            <button>
+                                <text>3.Mad Max Beyond Thunderdome</text>
+                                <postback> ^ Mad Max ^ Beyond ^</postback>
+                            </button>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                
+                        </template>
+                        
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Mad Max </pattern>
+                            <template>
+                            <delay>2</delay>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/5/5a/MadMazAus.jpg</image>
+                                    
+                                    <title>Mad Max</title>
+                                    <subtitle>
+                                        In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Mad Max (1979) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0079501/?ref_=nv_sr_srsg_3</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Mad Max (1979) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Mad_Max_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ The Road Warrior ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+                                
+                                <think>
+                                    <set name = "wrong">phase1</set>
+                                </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                        <pattern> ^ Mad Max 1 ^ </pattern>
+                        <template>
+                            
+            				<srai> ^ Mad Max </srai>
+                        
+                        </template>
+            		</category>
+                        
+                        <category>
+                            <pattern> ^ Road Warrior ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/f/f7/Mad_max_two_the_road_warrior.jpg</image>
+                                    
+                                    <title>The Road Warrior</title>
+                                    <subtitle>
+                                        In the post-apocalyptic Australian wasteland, a cynical drifter agrees to help a small, gasoline-rich community escape a horde of bandits.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>The Road Warrior (1981) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0082694/?ref_=nv_sr_srsg_5</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>The Road Warrior (1981) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Mad_Max_2</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Mad Max ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ The Road Warrior ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+                                
+                                <think>
+                                    <set name = "wrong">phase1</set>
+                                </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Mad Max 2 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Road Warrior ^ </srai>
+                            
+                            </template>
+                		</category>
+                		
+                		<category>
+                            <pattern> ^ Mad Max ^ Warrior ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Road Warrior ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Mad Max ^ Beyond ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/e/e0/Mad_max_beyond_thunderdome.jpg</image>
+                                    
+                                    <title>Mad Max Beyond Thunderdome</title>
+                                    <subtitle>
+                                        After being exiled from the most advanced town in post apocalyptic Australia, a drifter travels with a group of abandoned children to rebel against the town's queen.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Mad Max Beyond Thunderdome (1985) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0089530/?ref_=nv_sr_srsg_6</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Mad Max Beyond Thunderdome (1985) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Mad_Max_Beyond_Thunderdome</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ The Road Warrior ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+                                
+                                <think>
+                                    <set name = "wrong">phase1</set>
+                                </think>
+                                
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Mad Max ^ Thunderdome ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Mad Max ^ Beyond ^ </srai>
+                            
+                            </template>
+                		</category>
+                		
+                		<category>
+                            <pattern> ^ Mad Max 3 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Mad Max ^ Beyond ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                <category>
+                    
+                    <pattern> ^ Franciza Planet of the Apes ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        Acesta serie se remarca prin faptul ca foloseste evolutia 🧬 ca premiza postapocaliptica ☠️.
+                        <delay>1</delay>
+                        Iar omul trebuie sa demonstreze ca merita sa ramana in varful 🔝 lantului trofic .
+                        <delay>1</delay>
+                        Ce film doresti sa vizionezi?
+                			
+                    	<button>
+                            <text>1.Rise of the Planet of the Apes</text>
+                            <postback> ^ Rise ^ Planet ^ Apes ^ </postback>
+                            </button>
+                    
+                        <button>
+                            <text>2.Dawn of the Planet of the Apes</text>
+                            <postback> ^ Dawn ^ Planet ^ Apes ^</postback>
+                        </button>
+                        
+                        <button>
+                            <text>3.War for the Planet of the Apes</text>
+                            <postback> ^ War ^ Planet ^ Apes ^</postback>
+                        </button>
+                        
+                       <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                    </template>
+                    
+                </category>
+                
+                <category>
+                    <pattern> ^ Trilogia Planet of the Apes ^ </pattern>
+                    <template>
+                        
+                		<srai> ^ Franciza Planet of the Apes ^ </srai>
+                    
+                    </template>
+        		</category>
+                
+                    <category>
+                        <pattern> ^ Rise ^ Planet ^ Apes ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/8/81/Rise_of_the_Planet_of_the_Apes_Poster.jpg</image>
+                                
+                                <title>Rise of the Planet of the Apes</title>
+                                <subtitle>
+                                    A substance designed to help the brain repair itself gives advanced intelligence to a chimpanzee who leads an ape uprising.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Rise of the Planet of the Apes (2011) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt1318514/?ref_=nv_sr_srsg_6</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Rise of the Planet of the Apes (2011) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Rise_of_the_Planet_of_the_Apes</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ Dawn of the Planet of the Apes ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Rise of the Planet of the Apes</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/M-s5dzC9q48</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/4DjRcID2N6I</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Planet ^ Apes 1 ^ </pattern>
+                        <template>
+                            
+                    		<srai> ^ Rise ^ Planet ^ Apes ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ Dawn ^ Planet ^ Apes ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/7/77/Dawn_of_the_Planet_of_the_Apes.jpg</image>
+                                
+                                <title>Dawn of the Planet of the Apes</title>
+                                <subtitle>
+                                    A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>Dawn of the Planet of the Apes (2014) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt2103281/?ref_=nv_sr_srsg_7</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Dawn of the Planet of the Apes (2014) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Dawn_of_the_Planet_of_the_Apes</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Rise of the Planet of the Apes ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Filmul urmator ⫸ </text>
+                                    <postback> ^ War of the Planet of the Apes ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Dawn of the Planet of the Apes</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/h_E2IJ4eYIc</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/Kx6Visjg2Es</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Planet ^ Apes 2 ^ </pattern>
+                        <template>
+                            
+                    		<srai> ^ Dawn ^ Planet ^ Apes ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+                    <category>
+                        <pattern> ^ War ^ Planet ^ Apes ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/en/d/d7/War_for_the_Planet_of_the_Apes_poster.jpg</image>
+                                
+                                <title>War of the Planet of the Apes</title>
+                                <subtitle>
+                                    After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.
+                                </subtitle>
+                                    
+                                <button>
+                                    <text>War for the Planet of the Apes (2017) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt3450958/?ref_=nv_sr_srsg_5</url>
+                                </button>
+                                
+                                <button>
+                                    <text>War for the Planet of the Apes (2017) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/War_for_the_Planet_of_the_Apes</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⫷ Filmul anterior</text>
+                                    <postback> ^ Dawn of the Planet of the Apes ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                            
+                            </card>
+      
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>War of the Planet of the Apes</title>
+                                <subtitle>
+                                    Recenzie film (YouTube)
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Review Chris Stuckmann</text>
+                                    <url>https://youtu.be/grcgqJvQeKI</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Review Jeremy Jahns</text>
+                                    <url>https://youtu.be/nXNGmJoLuZ8</url>
+                                </button>
+                                
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                    <category>
+                        <pattern> ^ Planet ^ Apes 3 ^ </pattern>
+                        <template>
+                            
+                    		<srai> ^ War ^ Planet ^ Apes ^ </srai>
+                        
+                        </template>
+            		</category>
+                    
+        <category>
+            
+            <pattern> ^ 6PADrama9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Intr-un film postapocaliptic ☠️ stii cu siguranta ca se va intampla ceva catastrofal ⚰️.
+                <delay>1</delay>
+                Insa starea pe care ti-o transmite nu trebuie neaparat sa fie una negativa.
+                <delay>1</delay>
+                Ce tip de film simti nevoia sa privesti?
+        			
+            	<button>
+                    <text>Film optimist</text>
+                    <postback> ^ 6Filmoptimist9 ^ </postback>
+                    </button>
+            
+                <button>
+                    <text>Film pesimist</text>
+                    <postback> ^ 6Filmpesimist9 ^</postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                    
+            </template>
+            
+        </category>
+        
+            <category>
+                
+                <pattern> ^ 6Filmoptimist9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Tot ce trebuie sa mai alegi este actorul.
+                    <delay>1</delay>
+                    Poti alege dintre un actor american sau un actor roman.
+                    <delay>1</delay>
+                    Ce actor doresti sa vezi in film?
+            			
+                	<button>
+                        <text>Arata-mi</text>
+                        <postback> ^ ceandop ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                </template>
+                
+            </category>
+            
+            <category>
+                
+                <pattern> ^ ceandop ^ </pattern>
+                <template>
+                    <delay>2</delay>
+                    
+                <carousel>
+            	    
+            	    <card>
+            	        <image>https://upload.wikimedia.org/wikipedia/commons/8/89/Chris_Evans_2020_%28cropped%29.jpg</image>
+                	       
+                	       <title>Chris Evans</title>
+                        <subtitle>Snowpiercer</subtitle>
+            	        
+                    	<button>
+                            <text>Film cu actorul Chris Evans</text>
+                            <postback> ^ Snowpiercer ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Chris Evans (Wikipedia)</text>
+                            <url>https://ro.wikipedia.org/wiki/Chris_Evans</url>
+                        </button>
+                    
+                    </card>
+                    
+                    <card>
+                        
+                        <image>https://www.cancan.ro/wp-content/media/441/2681/33707/14996792/1/61213377.jpg?width=502</image>
+                        
+            	        <title>Oana Pellea</title>
+            	        <subtitle>Children of Men</subtitle>
+                        
+                        <button>
+                            <text>Film cu actrita Oana Pellea</text>
+                            <postback> ^ Children ^ Men ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Oana Pellea (Wikipedia)</text>
+                            <url>https://ro.wikipedia.org/wiki/Oana_Pellea</url>
+                        </button>
+                    
+                    </card>
+                    
+                </carousel>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                        
+                </template>
+                
+            </category>
+            
+                <category>
+                    <pattern> ^ Snowpiercer ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/b/b4/Snowpiercer_poster.jpg</image>
+                            
+                            <title>Snowpiercer</title>
+                            <subtitle>
+                                In a future where a failed climate-change experiment has killed all life except for the lucky few who boarded the Snowpiercer, a train that travels around the globe, a new class system emerges.
+                        </subtitle>
+                                
+                            <button>
+                                <text>Snowpiercer (2013) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1706620/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                        
+                            <button>
+                                <text>Snowpiercer (2013) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Snowpiercer</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                            
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Snowpiercer</title>
+                            <subtitle>
+                            Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/5Q5EBV9K5KE</url>
+                            </button>
+                        
+                            <button>
+                                <text>Review Beyond The Trailer</text>
+                                <url>https://youtu.be/_vEgXHbuqsQ</url>
+                            </button>
+                            
+                            <button>
+                                <text>Breakdown and Analysis by Heavy Spoilers</text>
+                                <url>https://youtu.be/hi20jcVViaA</url>
+                            </button>
+                            
+                            <button>
+                                <text>Seria de carti Transperceneige </text>
+                                <url>https://www.amazon.com/gp/bookseries/B01EVKRH3M/ref=dp_st_1782761438</url>
+                            </button>
+                            
+                            <button>
+                                <text>Serial Snowpiercer</text>
+                                <postback> ^ Serial Snowpiercer ^ </postback>
+                            </button>
+                                
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                    <category>
+                        <pattern> ^ Serial Snowpiercer ^ </pattern>
+                        <template>
+                        <delay>2</delay>
+                        
+                        <carousel>
+                            
+                            <card>
+                                
+                                <image>https://m.media-amazon.com/images/M/MV5BYTY1MDhjOWQtYWFkNS00ODA1LTg1YTUtZDhmZDE0MDJlMzIwXkEyXkFqcGdeQXVyMTI4MDc0NjU2._V1_.jpg</image>
+                                
+                                <title>Snowpiercer</title>
+                                <subtitle>
+                                    Seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a perpetually-moving train that circles the globe, where class warfare, social injustice and the politics of survival play out.
+                            </subtitle>
+                                    
+                                <button>
+                                    <text>Snowpiercer TV Series (2020– ) IMDb</text>
+                                    <url>https://www.imdb.com/title/tt6156584/?ref_=nv_sr_srsg_0</url>
+                                </button>
+                            
+                                <button>
+                                    <text>Snowpiercer TV Series (2020– ) Wikipedia</text>
+                                    <url>https://en.wikipedia.org/wiki/Snowpiercer_(TV_series)</url>
+                                </button>
+                                
+                                <button>
+                                    <text> ⮸ Inapoi ⮸ </text>
+                                    <postback> ^ Snowpiercer ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Alege alt film</text>
+                                    <postback> ^ filme ^ </postback>
+                                </button>
+                                
+                            </card>
+          
+                            <card>
+                                
+                                <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                
+                                <title>Snowpiercer</title>
+                                <subtitle>
+                                Recenzie film (YouTube) + Extra
+                                </subtitle>
+                                        
+                                <button>
+                                    <text>Recenzie NEVI</text>
+                                    <url>https://youtu.be/B2fLzjOTGhE</url>
+                                </button>
+                            
+                                <button>
+                                    <text>Recenzie RFC</text>
+                                    <url>https://youtu.be/NdxwqgJIXDg</url>
+                                </button>
+                                
+                                <button>
+                                    <text>Seria de carti Transperceneige </text>
+                                    <url>https://www.amazon.com/gp/bookseries/B01EVKRH3M/ref=dp_st_1782761438</url>
+                                </button>
+                                    
+                            </card>
+                            
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                            
+                        </template>
+                    </category>
+                    
+                <category>
+                    <pattern> ^ Children ^ Men ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/f/fc/Children_of_men_ver4.jpg</image>
+                            
+                            <title>Children of Men</title>
+                            <subtitle>
+                                In 2027, in a chaotic world in which women have become somehow infertile, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea.
+                        </subtitle>
+                                
+                            <button>
+                                <text>Children of Men (2006) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0206634/?ref_=nv_sr_srsg_7</url>
+                            </button>
+                        
+                            <button>
+                                <text>Children of Men (2006) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Children_of_Men</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                            
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Children of Men</title>
+                            <subtitle>
+                            Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review WillFoxification</text>
+                                <url>https://youtu.be/kfVkiwZy5Fw</url>
+                            </button>
+                            
+                            <button>
+                                <text>Recenzie Sucre</text>
+                                <url>https://youtu.be/8axVpVx0Rp0</url>
+                            </button>
+                        
+                            <button>
+                                <text>Review Jimmy Cage</text>
+                                <url>https://youtu.be/Zxzsvtv_OKs</url>
+                            </button>
+                            
+                            <button>
+                                <text>Cartea "The Children of Men" by P. D. James </text>
+                                <url>https://www.amazon.com/Children-Men-P-D-James/dp/0307275434</url>
+                            </button>
+                                
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>    
+                        
+                    </template>
+                </category>
+                
+            <category>
+                
+                <pattern> ^ 6Filmpesimist9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Am mai ramas de ales doar actorul.
+                    <delay>1</delay>
+                    Petru asta ti-am pregatit doi actori care au facut istorie, amandoi in ipostaze nemaivazute.
+                    <delay>1</delay>
+                    Ce actor iti place mai mult?
+            			
+                	<button>
+                        <text>Arata-mi</text>
+                        <postback> ^ vmandcm ^ </postback>
+                        </button>
+                
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                </template>
+                
+            </category>
+            
+            <category>
+                
+                <pattern> ^ vmandcm ^ </pattern>
+                <template>
+                    <delay>2</delay>
+                    
+                <carousel>
+            	    
+            	    <card>
+            	        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Viggo_Mortensen_A_%282020%29.jpg/798px-Viggo_Mortensen_A_%282020%29.jpg</image>
+                	       
+                	       <title>Viggo Mortensen</title>
+                        <subtitle>The Road</subtitle>
+            	        
+                    	<button>
+                            <text>Film cu actorul Viggo Mortensen</text>
+                            <postback> ^ Road ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Viggo Mortensen (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Viggo_Mortensen</url>
+                        </button>
+                    
+                    </card>
+                    
+                    <card>
+                        
+                        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cillian_Murphy_Press_Conference_The_Party_Berlinale_2017_02cr.jpg/900px-Cillian_Murphy_Press_Conference_The_Party_Berlinale_2017_02cr.jpg</image>
+                        
+            	        <title>Cillian Murphy</title>
+            	        <subtitle>28 Days Later</subtitle>
+                        
+                        <button>
+                            <text>Film cu actrita Cillian Murphy</text>
+                            <postback> ^ 28 Days Later ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Informatii despre Cillian Murphy (Wikipedia)</text>
+                            <url>https://en.wikipedia.org/wiki/Cillian_Murphy</url>
+                        </button>
+                    
+                    </card>
+                    
+                </carousel>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                        
+                </template>
+                
+            </category>
+            
+                <category>
+                    <pattern> ^ Road ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/a/a7/The_Road_movie_poster.jpg</image>
+                            
+                            <title>The Road</title>
+                            <subtitle>
+                                In a dangerous post-apocalyptic world, an ailing father defends his son as they slowly travel to the sea.
+                        </subtitle>
+                                
+                            <button>
+                                <text>The Road (2009) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0898367/?ref_=nv_sr_srsg_2</url>
+                            </button>
+                        
+                            <button>
+                                <text>The Road (2009) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/The_Road_(2009_film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                            
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>The Road</title>
+                            <subtitle>
+                            Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review WillFoxification</text>
+                                <url>https://youtu.be/VE0k1V4ECxE</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Alex Haitz</text>
+                                <url>https://youtu.be/J1dTAMY0kVo</url>
+                            </button>
+                        
+                            <button>
+                                <text>Cartea "The Road" by Cormac McCarthy </text>
+                                <url>https://www.amazon.com/Road-Cormac-McCarthy/dp/0307387895</url>
+                            </button>
+                                
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ 28 Days Later ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/e/e4/28_days_later.jpg</image>
+                            
+                            <title>28 Days Later...</title>
+                            <subtitle>
+                                Four weeks after a mysterious, incurable virus spreads throughout the UK, a handful of survivors try to find sanctuary.
+                        </subtitle>
+                                
+                            <button>
+                                <text>28 Days Later... (2002) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0289043/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                        
+                            <button>
+                                <text>28 Days Later... (2002) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/28_Days_Later</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                            
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>28 Days Later...</title>
+                            <subtitle>
+                            Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/kbuCnTZvTvQ</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Cody Leach</text>
+                                <url>https://youtu.be/IkhkqDYZSyg</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Bloodbath and Beyond</text>
+                                <url>https://youtu.be/wHJE312SrVw</url>
+                            </button>
+                                
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    </template>
+                </category>
+
+</aiml>

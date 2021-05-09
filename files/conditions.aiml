@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern> * </pattern>
+	    <template>
+	    
+	    <condition name="wrong" >
+	        
+	        <li value="unknown">
+	            
+	            <delay>1</delay>
+        	    <random>
+        	        <li><image>https://i.chzbgr.com/full/9031979520/hE87529DA/c3po-so-confused-reaction-gif-star-wars-gifs</image></li>
+        	        <li><image>https://media.giphy.com/media/1oJLpejP9jEvWQlZj4/giphy.gif</image></li>
+        	    </random>
+        	    <delay>1</delay>
+        	    Raspunsul tau imi este neclar.
+        	    <split/>
+        	    Te rog incerca din nou.
+	            
+	        </li>
+	        
+            <li value="phase1">
+                
+                <delay>1</delay>
+        	    <random>
+        	        <li><image>https://i.chzbgr.com/full/9031979520/hE87529DA/c3po-so-confused-reaction-gif-star-wars-gifs</image></li>
+        	        <li><image>https://media.giphy.com/media/1oJLpejP9jEvWQlZj4/giphy.gif</image></li>
+        	    </random>
+        	    <delay>1</delay>
+        	    Raspunsul tau imi este neclar.
+        	    <split/>
+        	    Vei fi redirectionat la optiunile anterioare...
+        	    <split/>
+        	    
+        	    <random>
+        	    
+        	        <li>🌕 🌖 🌗 🌘 🌑 🌒 🌓 🌔 🌕</li>
+        	        
+        	        <li>🌳🌳🌹🌹🏫🌳🌳🏢🏢_🏢🏢🌳🌳</li>
+        	        
+        	        <li>✏️📝✏️📝✏️📝✏️📝✏️📝✏️📝</li>
+        	        
+        	        <li>🌊🌊⛵🌊🌊🌊🐬🌊🌊🌊⛵🌊</li>
+        	    
+        	        <li>🌊🌊🌊🌊🌊🏄🌊🌊🏖🏖🌴🌴🌴</li>
+        	    
+        	    </random>
+        	    
+        	    <delay>3</delay>
+        	    
+        	    <response index="0" />
+        	    
+        	    <think>
+        	        <set name = "wrong">phase2</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="phase2" >
+                
+                <response index="0" />
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> cine sunt </pattern>
+	    <template>
+	        <delay>1</delay>
+	        
+	        <image>https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg</image>
+	        
+	        Nume: <first><sentence><get name="name"/><star /></sentence></first>
+	        <split/>
+	        Peste 18 ani: <sentence><get name="+18"/></sentence>
+	        <split/>
+	        Lucru preferat: <sentence><get name="lucrupreferat"/></sentence>
+	        
+	        <button>
+	            <text>Alege alt film</text>
+	            <postback> ^ da ^ </postback>
+	        </button>
+	        
+	        <think>
+                <set name = "wrong">phase1</set>
+            </think>
+	        
+	    </template>
+	  
+	</category>
+	
+	<category>
+	    <pattern> reset </pattern>
+	    <template>
+	        
+	        <think>
+	            <set name="wrong">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="start">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="subgen">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="pass1">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="pass2">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="pass3">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="name">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="+18">unknown</set>
+	        </think>
+	        
+	        <think>
+	            <set name="lucrupreferat">unknown</set>
+	        </think>
+	        
+	        <srai> ^ Buna ^ </srai>
+	        
+	    </template>
+	    
+	</category>
+	
+	<category>
+	    <pattern> ^ Action ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                <srai> ^ 6SuperheroesAction9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <srai> ^ 6AlienAction9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <srai> ^ 6PAAction9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <srai> ^ 6CSAction9 ^</srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <srai> ^ 6SpeculativeFictionAction9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> ^ Drama ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                <srai> ^ 6SuperheroesDrama9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Alien 👽".
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Drama 🎭" pe acesta il poti gasi in urmatoarele categorii:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Superheroes 🦸‍♂️</text>
+                    <postback> ^ Superheroes ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Post-Apocalyptic ☢️</text>
+                    <postback> ^ Post ^ apocalyptic ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Cosmic space 🚀</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <srai> ^ 6PADrama9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <srai> ^ 6CSDrama9 ^</srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Speculative Fiction ✨" insa filmele din subgenul "Psychological 🧐 " abordeaza si genul dramatic.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Drama 🎭" pe acesta il poti gasi in urmatoarele categorii:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Superheroes 🦸‍♂️</text>
+                    <postback> ^ Superheroes ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Post-Apocalyptic ☢️</text>
+                    <postback> ^ Post ^ apocalyptic ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Cosmic space 🚀</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> ^ Thriller ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Superheroes 🦸‍♂" insa filmele din subgenul "Drama 🎭" abordeaza si genul thriller.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Thriller 😰" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ Alien ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Superheroes ^ </postback>
+                    </button>
+                    
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <srai> ^ 6AlienThriller9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Post-Apocalyptic ☠️" insa filmele din subgenul "Drama 🎭" abordeaza si genul thriller.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Thriller 😰" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Cosmic space 🚀" insa filmele din subgenul "Drama 🎭" abordeaza si genul thriller.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Thriller 😰" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Speculative Fiction ✨" insa filmele din subgenul "Psychological 🧐" abordeaza si genul thriller.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Thriller 😰" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> ^ Comedy ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                <srai> ^ 6SuperheroesComedy9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Alien 👽".
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Comedy 🤣" pe acesta il poti gasi in urmatoarea categorie:
+                
+                <button>
+                    <text>Superheroes 🦸‍♂️</text>
+                    <postback> ^ Superheroes ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Post-Apocalyptic ☠️".
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Comedy 🤣" pe acesta il poti gasi in urmatoarea categorie:
+                
+                <button>
+                    <text>Superheroes 🦸‍♂️</text>
+                    <postback> ^ Superheroes ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Cosmic space 🚀" insa unele filmele din ramura "Action 😎 ⫸ Star Wars 🌟" sunt destul de amuzante.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Comedy 🤣" pe acesta il poti gasi in urmatoarea categorie:
+                
+                <button>
+                    <text>Superheroes 🦸‍♂️</text>
+                    <postback> ^ Superheroes ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Speculative Fiction ✨" insa unele filmele din subgenul "Romance 🥰" abordeaza si genul comic.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Comedy 🤣" pe acesta il poti gasi in urmatoarea categorie:
+                
+                <button>
+                    <text>Superheroes 🦸‍♂️</text>
+                    <postback> ^ Superheroes ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Inapoi la optiuni</text>
+                    <postback> ^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> ^ Romance ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Superheroes 🦸‍♂" insa majoritatea filmele au cate un cuplu.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Romance 🥰 " pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Alien 👽" insa majoritatea filmele au cate un cuplu.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Romance 🥰 " pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Post-Apocalyptic ☠️" insa majoritatea filmele au cate un cuplu.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Romance 🥰 " pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Cosmic space 🚀" insa in filmele din subgenul "Action😎 " exista destul de multe cupluri.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Romance 🥰 " pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <srai> ^ 6SpeculativeFictionRomance9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> ^ Horror ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Superheroes 🦸‍♂".
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Horror 😱" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <srai> ^ 6AlienHorror9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Post-Apocalyptic ☠️" insa filmele din subgenul "Drama 🎭 " pot deveni inspaimantatoare foarte rapid.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Horror 😱" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Cosmic space 🚀" insa filmele din subgenul "Drama 🎭 " pot deveni inspaimantatoare foarte rapid.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Horror 😱" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Speculative Fiction ✨" insa filmele din subgenul "Psychological 🧐" pot deveni inspaimantatoare foarte rapid.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Horror 😱" pe acesta il poti gasi in urmatoarea categorie:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+            
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> ^ Psychological ^ </pattern>
+	    <template>
+	    
+	    <condition name="subgen" >
+	        
+            <li value="superheroes">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Superheroes 🦸‍♂" insa filmele din subgenul "Drama 🎭" abordeaza si genul psihologic.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Psychological 🧐" pe acesta il poti gasi in urmatoarele categorii:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+            
+            </li>
+            
+            <li value="alien">
+                
+                <srai> ^ 6AlienPhilosophical9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="postap" >
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Post-Apocalyptic ☠️" insa filmele din subgenul "Drama 🎭" abordeaza si genul psihologic.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Psychological 🧐" pe acesta il poti gasi in urmatoarele categorii:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value ="cosmic">
+                
+                <delay>1</delay>
+                Acest subgen nu a fost inca introdus in categoria "Cosmic space 🚀" insa filmele din subgenul "Drama 🎭" abordeaza si genul psihologic.
+                <delay>1</delay>
+                Daca totusi iti doresti un film SF din subgenul "Psychological 🧐" pe acesta il poti gasi in urmatoarele categorii:
+                <delay>1</delay>
+                
+                <button>
+                    <text>Alien 👽</text>
+                    <postback> ^ AlienC ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Speculative fiction ✨</text>
+                    <postback>^ Speculative Fiction ^ </postback>
+                </button>
+                
+                <button>
+                    <text>⫷Inapoi la optiuni</text>
+                    <postback> ^ Cosmic space ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="spec">
+                
+                <srai> ^ 6SpeculativeFictionPsychological9 ^ </srai>
+                
+                <think>
+        	        <set name = "subgen">nogen</set>
+        	    </think>
+                
+            </li>
+            
+            <li value="nogen">
+                
+                <srai> * </srai> 
+                
+            </li>
+            
+        </condition>
+	  
+	    </template>
+	</category>
+	
+</aiml>

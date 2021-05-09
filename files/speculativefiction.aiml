@@ -1,0 +1,2362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+	    
+        <pattern> ^ Speculative Fiction ^ </pattern>
+        <template>
+            <delay>1</delay>
+            In aceasta categorie vei gasi cele mai unice si in acelasi timp cele mai ciudate filme din intreg genul SF. 
+            <delay>1</delay>
+            Aici se regasesc numeroase teme SF, de la calatorie in timp 🕤 si universuri distopice 🌃 pana la metafore filosofice 🧠 si chiar teorii stintifice 🧪, cu siguranta vei gasi ceva pe placul tau.
+            <delay>1</delay>
+            Alege un subgen pentru filmul tau.
+			
+    	<button>
+            <text>Action 😎 </text>
+            <postback> ^ 6SpeculativeFictionAction9 ^ </postback>
+        </button>
+        
+        <button>
+            <text>Psychological 🧐 </text>
+            <postback> ^ 6SpeculativeFictionPsychological9 ^ </postback>
+        </button>
+        
+        <button>
+            <text>Romance 🥰</text>
+            <postback> ^ 6SpeculativeFictionRomance9 ^ </postback>
+        </button>
+        
+        <think>
+            <set name = "wrong">phase1</set>
+        </think>
+        
+        <think>
+        	 <set name = "subgen">spec</set>
+        </think>
+        
+    	</template>
+    	
+    </category>
+    
+        <category>
+    	    
+            <pattern> ^ 6SpeculativeFictionAction9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Subcategoria "calatoria in timp  🕤 " se regaseste in multe filme de actiune SF insa daca aceasta nu e chiar pe gustul tau poti continua cautarea in alta directie.
+                <delay>1</delay>
+                Doresti ca intriga filmului sa fie calatoria in timp sau vrei ceva diferit?
+    			
+        	<button>
+                <text>Calatorie in timp 🕤</text>
+                <postback> ^ Calatorie in timp ^ </postback>
+            </button>
+            
+            <button>
+                <text>Vreau ceva diferit</text>
+                <postback> ^ 6cevadiferitx19 ^ </postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+        	</template>
+        	
+        </category>
+        
+            <category>
+        	    
+                <pattern> ^ Calatorie in timp ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Fara doar si poate franciza Terminator este cea mai faimoasa cand vine vorba de calatorie in timp insa daca nu este genul tau poti continua cautarea in alte directie.
+                    <delay>1</delay>
+                    Doresti un film din franciza Terminator sau ceva diferit?
+        			
+            	<button>
+                    <text>Franciza Terminator</text>
+                    <postback> ^ Franciza Terminator ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Vreau ceva diferit</text>
+                    <postback> ^ 6cevadiferitx29 ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+            	    
+                    <pattern> ^ Franciza Terminator ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        <image>https://media.giphy.com/media/wahznsJcuMe2I/giphy.gif</image>
+                        <delay>2</delay>
+                        O da franciza Terminator!
+                        <delay>1</delay>
+                        Trilogia clasica a facut furori la momentul lansarii devenind o legenda cu trecerea anilor.
+                        <delay>1</delay>
+                        Trilogia moderna pe de alta parte nu s-a bucurat de acelasi succes insa ramane o obtiune buna daca vrei si mai multa actiune cu "Arny".
+                        <delay>1</delay>
+                        Alege una dintre cele doua trilogii Terminator.
+            			
+                	<button>
+                        <text>Trilogia clasica</text>
+                        <postback> ^ Trilogia clasica Terminator ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Trilogia moderna</text>
+                        <postback> ^ Trilogia moderna Terminator ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                <category>
+                    <pattern> ^ Universul Terminator ^ </pattern>
+                    <template>
+                        
+        				<srai> ^ Franciza Terminator ^ </srai>
+                    
+                    </template>
+        		</category>
+                
+                    <category>
+                	    
+                        <pattern> ^ Trilogia clasica Terminator ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            <image>https://media.giphy.com/media/3oEjHSNWEQN0DbSULu/giphy.gif</image>
+                            <delay>3</delay>
+                            Alege un film din trilogia clasica Terminator.
+                			
+                    	<button>
+                            <text>The Terminator</text>
+                            <postback> ^ Terminator </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Terminator 2: Judgment Day</text>
+                            <postback> ^ Terminator 2 ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Terminator 3: Rise of the Machines</text>
+                            <postback> ^ Terminator 3 ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Terminator </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/7/70/Terminator1984movieposter.jpg</image>
+                                    
+                                    <title>The Terminator</title>
+                                    <subtitle>
+                                        A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>The Terminator (1984) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0088247/?ref_=nv_sr_srsg_3</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>The Terminator (1984) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/The_Terminator</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Terminator 2 ^ Judgment Day ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>The Terminator</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Sean Chandler</text>
+                                        <url>https://youtu.be/jCsvrdya9X4</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review BrandoCritic</text>
+                                        <url>https://youtu.be/lHbnHvfEHWA</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Terminator 1 ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Terminator 2 ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/8/85/Terminator2poster.jpg</image>
+                                    
+                                    <title>Terminator 2: Judgment Day</title>
+                                    <subtitle>
+                                        A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her ten year old son, John Connor, from a more advanced and powerful cyborg.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Terminator 2: Judgment Day (1991) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0103064/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Terminator 2: Judgment Day (1991) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ The Terminator ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Terminator 3 ^ Rise of the Machines ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Terminator 2: Judgment Day</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/04y3bcd4ZAg</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Sean Chandler</text>
+                                        <url>https://youtu.be/umLraaap4JM</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Review BrandoCritic</text>
+                                        <url>https://youtu.be/VWusYm21P0o</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Terminator ^ Judgment ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 2 ^ </srai>
+                            
+                            </template>
+                		</category>
+                		
+                		<category>
+                            <pattern> ^ Terminator ^ Day ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 2 ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Terminator 3 ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/3/39/Terminator_3_Rise_of_the_Machines_movie.jpg</image>
+                                    
+                                    <title>Terminator 3: Rise of the Machines</title>
+                                    <subtitle>
+                                        A machine from a post-apocalyptic future travels back in time to protect a man and a woman from an advanced robotic assassin to ensure they both survive a nuclear attack.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>erminator 3: Rise of the Machines (2003) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0181852/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>erminator 3: Rise of the Machines (2003) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Terminator_3:_Rise_of_the_Machines</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Terminator 2 ^ Judgment Day ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Terminator 3: Rise of the Machines</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Cody Leach</text>
+                                        <url>https://youtu.be/VGVTqvTAJLc</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Sean Chandler</text>
+                                        <url>https://youtu.be/LY7mLoZZvtw</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Review Bull Session</text>
+                                        <url>https://youtu.be/hxeBaXZKSXg</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Terminator ^ Rise ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 3 ^ </srai>
+                            
+                            </template>
+                		</category>
+                		
+                		<category>
+                            <pattern> ^ Terminator ^ Machines ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 3 ^ </srai>
+                            
+                            </template>
+                		</category>
+                    
+                    <category>
+                	    
+                        <pattern> ^ Trilogia moderna Terminator ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            <image>https://media.giphy.com/media/YjfAfZyzEoOZi/giphy.gif</image>
+                            <delay>1</delay>
+                            Alege un film din trilogia moderna Terminator.
+                			
+                    	<button>
+                            <text>Terminator Salvation</text>
+                            <postback> ^ Terminator 4 ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Terminator Genisys</text>
+                            <postback> ^ Terminator 5 ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Terminator: Dark Fate</text>
+                            <postback> ^ Terminator 6 ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Terminator 4 ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/9/95/Terminator-salvation-poster.jpg</image>
+                                    
+                                    <title>Terminator Salvation</title>
+                                    <subtitle>
+                                        In 2018, a mysterious new weapon in the war against the machines, half-human and half-machine, comes to John Connor on the eve of a resistance attack on Skynet. But whose side is he on, and can he be trusted?
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Terminator Salvation (2009) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0438488/?ref_=nv_sr_srsg_10</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Terminator Salvation (2009) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Terminator_Salvation</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Terminator Genisys ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Terminator Salvation</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube) + Extra
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Sean Chandler</text>
+                                        <url>https://youtu.be/WHLQfIJXsbk</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review JoBlo</text>
+                                        <url>https://youtu.be/Xxfjwzb5a4U</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Review Cody Leach</text>
+                                        <url>https://youtu.be/TjDfG8rpIac</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Terminator Salvation ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 4 ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Terminator 5 ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/9/95/Terminator-salvation-poster.jpg</image>
+                                    
+                                    <title>Terminator Genisys</title>
+                                    <subtitle>
+                                        When John Connor, leader of the human resistance, sends Sgt. Kyle Reese back to 1984 to protect Sarah Connor and safeguard the future, an unexpected turn of events creates a fractured timeline.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Terminator Genisys (2015) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt1340138/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Terminator Genisys (2015) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Terminator_Genisys</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Terminator Salvation ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Filmul urmator ⫸ </text>
+                                        <postback> ^ Terminator ^ Dark Fate ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Terminator Genisys</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube) + Extra
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Sean Chandler</text>
+                                        <url>https://youtu.be/gaTnYl1oZWY</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/OqxZlucOlhg</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/WuRyddBoeZU</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Terminator Genisys ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 5 ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                        <category>
+                            <pattern> ^ Terminator 6 ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/5/5f/Terminator_Dark_Fate_poster.jpg</image>
+                                    
+                                    <title>Terminator: Dark Fate</title>
+                                    <subtitle>
+                                        An augmented human and Sarah Connor must stop an advanced liquid Terminator from hunting down a young girl, whose fate is critical to the human race.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Terminator: Dark Fate (2019) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt6450804/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Terminator: Dark Fate (2019) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Terminator:_Dark_Fate</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text> ⫷ Filmul anterior</text>
+                                        <postback> ^ Terminator Genisys ^ </postback>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Terminator: Dark Fate</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Sean Chandler</text>
+                                        <url>https://youtu.be/5Yr6A0pStRg</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie FilmZoom</text>
+                                        <url>https://youtu.be/_cARAY9Hr7U</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Recenzie RFC</text>
+                                        <url>https://youtu.be/hRzL_l4biIo</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Terminator ^ Dark ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 6 ^ </srai>
+                            
+                            </template>
+                		</category>
+                		
+                		<category>
+                            <pattern> ^ Terminator ^ Fate ^ </pattern>
+                            <template>
+                                
+                				<srai> ^ Terminator 6 ^ </srai>
+                            
+                            </template>
+                		</category>
+                        
+                <category>
+            	    
+                    <pattern> ^ 6cevadiferitx29 ^ </pattern>
+                    <template>
+                        <image>https://media.giphy.com/media/RfEbMBTPQ7MOY/giphy.gif</image>
+                        <delay>1</delay>
+                        In orice film cu calatorie in timp prima intrebare pe care o vei pune este urmatoarea:
+                        <delay>1</delay>
+                        "Personajele au liber arbitru sau nu au liber arbitru?"
+                        <delay>1</delay>
+                        Aceiasi intrebare o adresez si eu pentru tine.
+            			
+                	<button>
+                        <text>Personaje cu liber arbitru</text>
+                        <postback> ^ 6liberarbitru9 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Personaje fara liber arbitru</text>
+                        <postback> ^ 6faraliberarbitru9 ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                    <category>
+                	    
+                        <pattern> ^ 6liberarbitru9 ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Ai ajuns in situatia in care ai de ales intre doua filme foarte bune cu doi actori in rolurile principale extrem de talentati.
+                            <delay>1</delay>
+                            Alege un actor in rol principal pentru filmul tau.
+                            <delay>2</delay>
+                            Tine minte daca nu te poti decide poti oricand sa le privesti pe amandoua 😉.
+                            
+                            <button>
+                                <text>Arata-mi</text>
+                                <postback> ^ bwandeh ^ </postback>
+                            </button>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                    <category>
+                	    
+                        <pattern> ^ bwandeh ^ </pattern>
+                        <template>
+                            
+                            <delay>2</delay>
+                            
+                	<carousel>
+                	    
+                	    <card>
+                	        <image>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bruce_Willis_by_Gage_Skidmore_3.jpg/850px-Bruce_Willis_by_Gage_Skidmore_3.jpg</image>
+                	        
+                	        <title>Bruce Willis</title>
+                	        <subtitle>Looper</subtitle>
+                	        
+                        	<button>
+                                <text>Film cu Bruce Willis</text>
+                                <postback> ^ Looper ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Informatii despre Bruce Willis (Wikipedia)</text>
+                                <url>https://ro.wikipedia.org/wiki/Bruce_Willis</url>
+                            </button>
+                        
+                        </card>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ethan_Hawke_2013.jpg/821px-Ethan_Hawke_2013.jpg</image>
+                	        
+                	        <title>Ethan Hawke</title>
+                	        <subtitle>Predestination</subtitle>
+                            
+                            <button>
+                                <text>Film cu Ethan Hawke</text>
+                                <postback> ^ Predestination ^ </postback>
+                            </button>
+                            
+                            <button>
+                                <text>Informatii despre Ethan Hawke (Wikipedia)</text>
+                                <url>https://ro.wikipedia.org/wiki/Ethan_Hawke</url>
+                            </button>
+                        
+                        </card>
+                        
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Looper ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/0/0a/Looper_poster.jpg</image>
+                                    
+                                    <title>Looper</title>
+                                    <subtitle>
+                                        In 2074, when the mob wants to get rid of someone, the target is sent into the past, where a hired gun awaits - someone like Joe - who one day learns the mob wants to 'close the loop' by sending back Joe's future self for assassination.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Looper (2012) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt1276104/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Looper (2012) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Looper_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Looper</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/SzrE8TaptdI</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/qHI-1JFJtuI</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Review IGN</text>
+                                        <url>https://youtu.be/u5cjsg0OmEA</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Predestination ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/4/4b/Predestination_poster.jpg</image>
+                                    
+                                    <title>Predestination</title>
+                                    <subtitle>
+                                        For his final assignment, a top temporal agent must pursue the one criminal that has eluded him throughout time. The chase turns into a unique, surprising and mind-bending exploration of love, fate, identity and time travel taboos.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Predestination (2014) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt2397535/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Predestination (2014) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Predestination_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Predestination</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/5riGjpQ2Rlw</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review Brandi Price</text>
+                                        <url>https://youtu.be/h1-c2lqogLk</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Review Beyond The Trailer</text>
+                                        <url>https://youtu.be/O2kid6xNdJU</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                    
+                    <category>
+                	    
+                        <pattern> ^ 6faraliberarbitru9 ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Ai ajuns in situatia in care ai de ales intre doua filme foarte bune cu doi actori in rolurile principale extrem de talentati.
+                            <delay>1</delay>
+                            Alege un actor in rol principal pentru filmul tau.
+                            <delay>2</delay>
+                            Tine minte daca nu te poti decide poti oricand sa le privesti pe amandoua 😉.
+                            
+                            <button>
+                                <text>Arata-mi</text>
+                                <postback> ^ tcandjdw ^ </postback>
+                            </button>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                    <category>
+                	    
+                        <pattern> ^ tcandjdw ^ </pattern>
+                        <template>
+                            <delay>2</delay>
+                            
+                        <carousel>
+                	    
+                    	    <card>
+                    	        <image>https://upload.wikimedia.org/wikipedia/commons/0/06/Tom_Cruise_avp_2014.jpg</image>
+                    	        
+                    	        <title>Tom Cruise</title>
+                    	        <subtitle>Minority Report</subtitle>
+                    	        
+                            	<button>
+                                    <text>Film cu Tom Cruise</text>
+                                    <postback> ^ Minority Report ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Informatii despre Tom Cruise (Wikipedia)</text>
+                                    <url>https://ro.wikipedia.org/wiki/Tom_Cruise</url>
+                                </button>
+                            
+                            </card>
+                            
+                            <card>
+                                
+                                <image>https://upload.wikimedia.org/wikipedia/commons/8/8a/John_David_Washington.png</image>
+                    	        
+                    	        <title>John David Washington</title>
+                    	        <subtitle>Tenet</subtitle>
+                                
+                                <button>
+                                    <text>Film cu John David Washington</text>
+                                    <postback> ^ Tenet ^ </postback>
+                                </button>
+                                
+                                <button>
+                                    <text>Informatii despre John David Washington (Wikipedia)</text>
+                                    <url>https://en.wikipedia.org/wiki/John_David_Washington</url>
+                                </button>
+                            
+                            </card>
+                        
+                        </carousel>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Tenet ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg</image>
+                                    
+                                    <title>Tenet</title>
+                                    <subtitle>
+                                        Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Tenet (2020) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Tenet (2020) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Tenet_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://i.ytimg.com/vi/kB5SNID2iAM/hqdefault.jpg</image>
+                                    
+                                    <title>Tenet</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Recenzie Inca Ceva</text>
+                                        <url>https://youtu.be/dNJreUNwYAE</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie NEVI</text>
+                                        <url>https://youtu.be/ogqz2D-xqkA</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Recenzie RFC</text>
+                                        <url>https://youtu.be/_NHWqdZjXCI</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Minority Report ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/4/44/Minority_Report_Poster.jpg</image>
+                                    
+                                    <title>Minority Report</title>
+                                    <subtitle>
+                                        In a future where a special police unit is able to arrest murderers before they commit their crimes, an officer from that unit is himself accused of a future murder.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Tenet (2020) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt0181689/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Tenet (2020) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Minority_Report_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Minority Report</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                            
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/FBrQVp8h2Gw</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Review BrandoCritic</text>
+                                        <url>https://youtu.be/BW1jkTnFOSc</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+            
+            <category>
+        	    
+                <pattern> ^ 6cevadiferitx19 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Exista multe criterii dupa care poti aprecia un film SF insa doua dintre ele ies mereu in evidenta:
+                    <delay>1</delay>
+                    Aspectul vizual si premiza unica.
+                    <delay>1</delay>
+                    Pentru tine ce criteriu conteaza mai mult?
+        			
+            	<button>
+                    <text>Aspectul vizual</text>
+                    <postback> ^ 6Aspectulvizual9 ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Premiza unica</text>
+                    <postback> ^ 6Premizaunica9 ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+            	    
+                    <pattern> ^ 6Aspectulvizual9 ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                        Acum trebuie sa alegi ce parte din aspectul vizual admiri cel mai mult?
+            			
+                	<button>
+                        <text>Lucru cu camera</text>
+                        <postback> ^ 6Lucrucucamera9 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Efecte speciale</text>
+                        <postback> ^ 6Efectespeciale9 ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                    <category>
+                	    
+                        <pattern> ^ 6Lucrucucamera9 ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Ti-am pregatit doua filme cu stiluri de filmare incredibil de satisfacatoare.
+                            <delay>1</delay>
+                            Alege unul dintre aceste stiluri.
+                			
+                    	<button>
+                            <text>Gravitatie zero</text>
+                            <postback> ^ Inception ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Camera flexibila</text>
+                            <postback> ^ Upgrade ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                    <category>
+                	    
+                        <pattern> ^ 6Efectespeciale9 ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Efectele speciale sunt in mare voga in momentul actual.
+                            <delay>1</delay>
+                            Ti-am pregatit doua arhitipuri pe care le vei adora.
+                            <delay>1</delay>
+                            Alege unul dintre acestea.
+                			
+                    	<button>
+                            <text>Efecte speciale artistice</text>
+                            <postback> ^ Annihilation  ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Efecte speciale gore</text>
+                            <postback> ^ Overlord ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                
+                <category>
+            	    
+                    <pattern> ^ 6Premizaunica9 ^ </pattern>
+                    <template>
+                        <delay>1</delay>
+                            Premiza este principalul lucru care atrage privitorul.
+                            <delay>1</delay>
+                            Unii privitori prefera ceva simplu si la obiect in timp ce altii doresc complexitate totala.
+                            <delay>1</delay>
+                            Tu ce preferinte ai?
+            			
+                	<button>
+                        <text>Premiza simpla</text>
+                        <postback> ^ 6Premizasimpla9 ^ </postback>
+                    </button>
+                    
+                    <button>
+                        <text>Premiza complexa</text>
+                        <postback> ^ 6Premizacomplexa9 ^ </postback>
+                    </button>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                    
+                	</template>
+                	
+                </category>
+                
+                    <category>
+                	    
+                        <pattern> ^ 6Premizasimpla9 ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Simpla si la obiect sa fie atunci!
+                            <delay>1</delay>
+                            Si ce poate fi mai simplu in genul SF decat zombi si implanturi cibernetice.
+                            <delay>1</delay>
+                            Acum depinde doar de tine ce premiza va avea filmul.
+                			
+                    	<button>
+                            <text>Zombi 🧟</text>
+                            <postback> ^ Overlord ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Cyberpunk 🦾</text>
+                            <postback> ^ Upgrade ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Overlord ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/e/e6/Overlord2018Poster.jpg</image>
+                                    
+                                    <title>Overlord</title>
+                                    <subtitle>
+                                        A small group of American soldiers find horror behind enemy lines on the eve of D-Day.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Overlord (2018) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt4530422/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Overlord (2018) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Overlord_(2018_film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Overlord</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/-b6jd-zhPdI</url>
+                                    </button>
+                                            
+                                    <button>
+                                        <text>Recenzie NEVI</text>
+                                        <url>https://youtu.be/2WNM9IV8NvI</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie RFC</text>
+                                        <url>https://youtu.be/6SPn4r-XPuM</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Upgrade ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg</image>
+                                    
+                                    <title>Upgrade</title>
+                                    <subtitle>
+                                        Set in the near-future, technology controls nearly all aspects of life. But when the world of Grey, a self-labeled technophobe, is turned upside down, his only hope for revenge is an experimental computer chip implant.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Upgrade (2018) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt6499752/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Upgrade (2018) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Upgrade_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Upgrade</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/4PXdOnIP4K4</url>
+                                    </button>
+                                            
+                                    <button>
+                                        <text>Recenzie Sucre</text>
+                                        <url>https://youtu.be/wnBrdSHPLuA</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie RFC</text>
+                                        <url>https://youtu.be/9gTouS6IEYc</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                    
+                    <category>
+                	    
+                        <pattern> ^ 6Premizacomplexa9 ^ </pattern>
+                        <template>
+                            <delay>1</delay>
+                            Am pentru tine doua filme ale caror regizori sunt regii premizei complexe.
+                            <delay>1</delay>
+                            Acum ramane la latitudinea ta ce premiza va fi.
+                			
+                    	<button>
+                            <text>Biomutatie</text>
+                            <postback> ^ Annihilation ^ </postback>
+                        </button>
+                        
+                        <button>
+                            <text>Lumea viselor</text>
+                            <postback> ^ Inception ^ </postback>
+                        </button>
+                        
+                        <think>
+                            <set name = "wrong">phase1</set>
+                        </think>
+                        
+                    	</template>
+                    	
+                    </category>
+                    
+                        <category>
+                            <pattern> ^ Annihilation ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png</image>
+                                    
+                                    <title>Annihilation</title>
+                                    <subtitle>
+                                        A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Annihilation (2018) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt2798920/?ref_=nv_sr_srsg_2</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Annihilation (2018) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Annihilation_(film)</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Annihilation</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/NhNJjvStrJM</url>
+                                    </button>
+                                            
+                                    <button>
+                                        <text>Recenzie Sucre</text>
+                                        <url>https://youtu.be/h2k-m7UBZLI</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie RFC</text>
+                                        <url>https://youtu.be/r4rEwDuMsRs</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+                        
+                        <category>
+                            <pattern> ^ Inception ^ </pattern>
+                            <template>
+                            <delay>2</delay>
+                            
+                            <carousel>
+                                
+                                <card>
+                                    
+                                    <image>https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg</image>
+                                    
+                                    <title>Inception</title>
+                                    <subtitle>
+                                        A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.
+                                    </subtitle>
+                                        
+                                    <button>
+                                        <text>Inception (2010) IMDb</text>
+                                        <url>https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Inception (2010) Wikipedia</text>
+                                        <url>https://en.wikipedia.org/wiki/Inception</url>
+                                    </button>
+                                    
+                                    <button>
+                                        <text>Alege alt film</text>
+                                        <postback> ^ filme ^ </postback>
+                                    </button>
+                                
+                                </card>
+              
+                                <card>
+                                    
+                                    <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                                    
+                                    <title>Inception</title>
+                                    <subtitle>
+                                        Recenzie film (YouTube)
+                                    </subtitle>
+                                    
+                                    <button>
+                                        <text>Review Chris Stuckmann</text>
+                                        <url>https://youtu.be/RNjdepthRrg</url>
+                                    </button>
+                                            
+                                    <button>
+                                        <text>Review Jeremy Jahns</text>
+                                        <url>https://youtu.be/L19McljFDAg</url>
+                                    </button>
+                                   
+                                    <button>
+                                        <text>Recenzie Sean Chandler</text>
+                                        <url>https://youtu.be/Hu0OtvOsms0</url>
+                                    </button>
+                                
+                                </card>
+                                    
+                            </carousel>
+                            
+                            <think>
+                                <set name = "wrong">phase1</set>
+                            </think>
+                                    
+                            </template>
+                        </category>
+        
+        <category>
+    	    
+            <pattern> ^ 6SpeculativeFictionPsychological9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Adesea filmele din genul "Psychological" au ca premiza o tema sociala.
+                <delay>1</delay>
+                Aceste filme dezbat probleme din societate intr-un mod artistic.
+                <delay>1</delay>
+                Ce teme sociale ar trebuie dezbatute in filmul tau?
+    			
+        	<button>
+                <text>Manipulare si incredere</text>
+                <postback> ^ 6Manipularesiincredere9 ^ </postback>
+            </button>
+            
+            <button>
+                <text>Integrarea individului in societate</text>
+                <postback> ^ 6Integrareaindividuluiinsocietate9 ^ </postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+        	</template>
+        	
+        </category>
+        
+            <category>
+        	    
+                <pattern> ^ 6Manipularesiincredere9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Poti alege un film despre manipulare faurit de insasi George Lucas 🌟.
+                    <delay>1</delay>
+                    Tousi daca vrei sa mergi pe incredere ti-am pregatit un clasic perfect pentru asta.
+        			
+            	<button>
+                    <text>Manipulare</text>
+                    <postback> ^ THX ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Incredere</text>
+                    <postback> ^ Cube ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ THX ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/5/56/THX1138.jpg</image>
+                            
+                            <title>THX 1138</title>
+                            <subtitle>
+                                In the 25th century, a time when people have designations instead of names, a man, THX 1138, and a woman, LUH 3417, rebel against their rigidly-controlled society.
+                            </subtitle>
+                                
+                            <button>
+                                <text>THX 1138 (1971) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0066434/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>THX 1138 (1971) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/THX_1138</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>THX 1138</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Oliver Harper</text>
+                                <url>https://youtu.be/K9ZUp6FqFps</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review The Unapologetic Geek</text>
+                                <url>https://youtu.be/xMCJbgRyDVI</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Cube ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/0/0c/Cube_The_Movie_Poster_Art.jpg</image>
+                            
+                            <title>Cube</title>
+                            <subtitle>
+                                Six complete strangers with widely varying personalities are involuntarily placed in an endless maze containing deadly traps.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Cube (1997) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0123755/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>Cube (1997) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Cube_(1997_film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Cube</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Mr Hat</text>
+                                <url>https://www.youtube.com/watch?v=w8nRi7A2Sq4</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review MileZee</text>
+                                <url>https://www.youtube.com/watch?v=p_4e1sG73so</url>
+                            </button>
+                            
+                            <button>
+                                <text>The Philosophy of Cube (SPOILERS!)</text>
+                                <url>https://youtu.be/ymdK9xX7Q8c</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+            <category>
+        	    
+                <pattern> ^ 6Integrareaindividuluiinsocietate9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Amandoua filme abordeaza aceeiasi tema dar intr-un mod diferit.
+                    <delay>1</delay>
+                    Primul il are ca regizor pe legendarul Stanley Kubrick 👨‍🚀 insa este un film foarte pretentios.
+                    <delay>1</delay>
+                    Al doilea este mai lejer si abordeaza conceptul de zeitate si puterea de a lua decizii.
+        			
+            	<button>
+                    <text>Film brutal (+18)</text>
+                    <postback> ^ Clockwork Orange ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Film "Deus Ex Machina"</text>
+                    <postback> ^ Donnie Darko ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ Clockwork Orange ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/7/73/A_Clockwork_Orange_%281971%29.png</image>
+                            
+                            <title>A Clockwork Orange</title>
+                            <subtitle>
+                                In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.
+                            </subtitle>
+                                
+                            <button>
+                                <text>A Clockwork Orange (1971) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0066921/?ref_=nv_sr_srsg_3</url>
+                            </button>
+                            
+                            <button>
+                                <text>A Clockwork Orange (1971) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/A_Clockwork_Orange_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>A Clockwork Orange</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Deepfocuslens</text>
+                                <url>https://youtu.be/WSqcwYgqIQs</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Maximum Hype</text>
+                                <url>https://youtu.be/n0nR2ZRZgVo</url>
+                            </button>
+                            
+                            <button>
+                                <text>The Philosophy of A Clockwork Orange (SPOILERS!)</text>
+                                <url>https://youtu.be/fs97_X0y580</url>
+                            </button>
+                            
+                            <button>
+                                <text>Cartea "A Clockwork Orange" by Anthony Burgess</text>
+                                <url>https://www.amazon.com/Clockwork-Orange-Anthony-Burgess/dp/0393312836</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Donnie Darko ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/d/db/Donnie_Darko_poster.jpg</image>
+                            
+                            <title>Donnie Darko</title>
+                            <subtitle>
+                                After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a man in a large rabbit suit who manipulates him to commit a series of crimes.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Donnie Darko (2001) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0246578/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Donnie Darko (2001) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Donnie_Darko</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Donnie Darko</title>
+                            <subtitle>
+                                Recenzie film (YouTube) + Extra
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Recenzie Inca Ceva</text>
+                                <url>https://youtu.be/HDVmxzgGCBM</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/tyePnQTYCG8</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Deepfocuslens</text>
+                                <url>https://youtu.be/JOfN7JLA0Gk</url>
+                            </button>
+                            
+                            <button>
+                                <text>The Philosophy of Donnie Darko (SPOILERS!)</text>
+                                <url>https://www.youtube.com/watch?v=xksMpeMHbTE</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+        
+        <category>
+    	    
+            <pattern> ^ 6SpeculativeFictionRomance9 ^ </pattern>
+            <template>
+                <delay>1</delay>
+                Cand zici genul "Romance 🥰" te gandesti automat la filme de cuplu 💑.
+                <delay>1</delay>
+                Daca totusi doresti ceva mai special poti alege sectiune pentru "exploratori 🌺".
+    			
+        	<button>
+                <text>Filme de cuplu 💑</text>
+                <postback> ^ Filme de cuplu ^ </postback>
+            </button>
+            
+            <button>
+                <text>Filme pentru "exploratori 🌺"</text>
+                <postback> ^ 6exploratori9 ^ </postback>
+            </button>
+            
+            <think>
+                <set name = "wrong">phase1</set>
+            </think>
+            
+        	</template>
+        	
+        </category>
+        
+            <category>
+        	    
+                <pattern> ^ Filme de cuplu ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Optiunile puse la dispozitie sunt construite din cuvintele cheie care definesc filmul respectiv.
+                    <delay>1</delay>
+                    Alege optiunea care te intriga mai mult.
+        			
+            	<button>
+                    <text>El 👨, ea 👩, provocarile 🌄 si spatiul cosmic 🌌</text>
+                    <postback> ^ Passengers ^ </postback>
+                </button>
+                
+                <button>
+                    <text>El 👨, ea 👩, amintirile 📅 si ceilalti 🧑‍🤝‍🧑</text>
+                    <postback> ^ Eternal Sunshine Spotless Mind ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ Passengers ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/8/8e/Passengers_2016_film_poster.jpg</image>
+                            
+                            <title>Passengers</title>
+                            <subtitle>
+                                A malfunction in a sleeping pod on a spacecraft traveling to a distant colony planet wakes one passenger 90 years early.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Passengers (2016) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1355644/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Passengers (2016) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Passengers_(2016_film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Passengers</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann and Doug Walker</text>
+                                <url>https://youtu.be/KaRu2pFVJHw</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review Jeremy Jahns</text>
+                                <url>https://youtu.be/2zjzFhyaqrE</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review The Flick Pick</text>
+                                <url>https://youtu.be/GkjpVCLPGyY</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Eternal Sunshine Spotless Mind ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/a/a4/Eternal_Sunshine_of_the_Spotless_Mind.png</image>
+                            
+                            <title>Eternal Sunshine of the Spotless Mind</title>
+                            <subtitle>
+                                When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Eternal Sunshine of the Spotless Mind (2004) IMDb</text>
+                                <url>https://www.imdb.com/title/tt0338013/?ref_=nv_sr_srsg_0</url>
+                            </button>
+                            
+                            <button>
+                                <text>Eternal Sunshine of the Spotless Mind (2004) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Eternal_Sunshine_of_the_Spotless_Mind</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Eternal Sunshine of the Spotless Mind</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review HeyitsHannah</text>
+                                <url>https://www.youtube.com/watch?v=g9cnbKhfd88</url>
+                            </button>
+                           
+                            <button>
+                                <text>Recenzie Sucre</text>
+                                <url>https://youtu.be/2qv_UHswUwc</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review Caleb</text>
+                                <url>https://youtu.be/NF5w3KarqHw</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+            
+            <category>
+        	    
+                <pattern> ^ 6exploratori9 ^ </pattern>
+                <template>
+                    <delay>1</delay>
+                    Sper ca esti pregatit pentru cele mai "speciale" premize din genul "Romance🥰":
+                    <delay>1</delay>
+                    Un tip antisocial este nevoit sa se indragosteasca in 45 de zile sau va fi transformat intr-un animal la alegere.
+                    <delay>1</delay>
+                    Un alt tip se indragosteste pe bune de un chatbot 😁.
+        			
+            	<button>
+                    <text>Iubeste sau devii animal 🏩</text>
+                    <postback> ^ Lobster ^ </postback>
+                </button>
+                
+                <button>
+                    <text>Relatie intima cu un chatbot 💌</text>
+                    <postback> ^ Her ^ </postback>
+                </button>
+                
+                <think>
+                    <set name = "wrong">phase1</set>
+                </think>
+                
+            	</template>
+            	
+            </category>
+            
+                <category>
+                    <pattern> ^ Lobster ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/9/9d/The_Lobster_%282015%29_poster.jpg</image>
+                            
+                            <title>The Lobster</title>
+                            <subtitle>
+                                In a dystopian near future, single people, according to the laws of The City, are taken to The Hotel, where they are obliged to find a romantic partner in forty-five days or are transformed into beasts and sent off into The Woods.
+                            </subtitle>
+                                
+                            <button>
+                                <text>The Lobster (2015) IMDb</text>
+                                <url>https://www.imdb.com/title/tt3464902/?ref_=tt_mv_close</url>
+                            </button>
+                            
+                            <button>
+                                <text>The Lobster (2015) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/The_Lobster</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>The Lobster</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Alachia Queen</text>
+                                <url>https://youtu.be/9fWr4M59c8g</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review iWatched</text>
+                                <url>https://youtu.be/1qIQNGk3RfM</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review What The Flick</text>
+                                <url>https://youtu.be/Xx6Q8WqvLfY</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern> ^ Her ^ </pattern>
+                    <template>
+                    <delay>2</delay>
+                    
+                    <carousel>
+                        
+                        <card>
+                            
+                            <image>https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg</image>
+                            
+                            <title>Her</title>
+                            <subtitle>
+                                In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.
+                            </subtitle>
+                                
+                            <button>
+                                <text>Her (2013) IMDb</text>
+                                <url>https://www.imdb.com/title/tt1798709/?ref_=nv_sr_srsg_6</url>
+                            </button>
+                            
+                            <button>
+                                <text>Her (2013) Wikipedia</text>
+                                <url>https://en.wikipedia.org/wiki/Her_(film)</url>
+                            </button>
+                            
+                            <button>
+                                <text>Alege alt film</text>
+                                <postback> ^ filme ^ </postback>
+                            </button>
+                        
+                        </card>
+      
+                        <card>
+                            
+                            <image>https://en.islcollective.com/preview/201810/f/movies-adjectives-and-movie-review-conversation-topics-dialogs-writing-creative-writi_111108_1.jpg</image>
+                            
+                            <title>Her</title>
+                            <subtitle>
+                                Recenzie film (YouTube)
+                            </subtitle>
+                                    
+                            <button>
+                                <text>Review Chris Stuckmann</text>
+                                <url>https://youtu.be/v94ArWCThHo</url>
+                            </button>
+                           
+                            <button>
+                                <text>Review BrainPilot</text>
+                                <url>https://youtu.be/3hvniOC08Ps</url>
+                            </button>
+                            
+                            <button>
+                                <text>Review What The Flick</text>
+                                <url>https://youtu.be/v2gIXUQ305k</url>
+                            </button>
+                        
+                        </card>
+                            
+                    </carousel>
+                    
+                    <think>
+                        <set name = "wrong">phase1</set>
+                    </think>
+                            
+                    </template>
+                </category>
+    
+</aiml>
